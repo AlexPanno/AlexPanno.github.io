@@ -615,6 +615,10 @@ ul {
   color: #cd9b3e;
 }
 
+.our-masters .info-block .button:hover {
+  color: #fff;
+}
+
 .our-design {
   background: url('../img/backgrounds/our-design-background.png') no-repeat
   92.5% bottom / auto #f6f2f3;
