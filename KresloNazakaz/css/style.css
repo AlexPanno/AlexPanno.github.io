@@ -899,10 +899,6 @@ ul {
   .circle-menu {
     display: flex;
   }
-  
-  .user {
-    max-width: 236px;
-  }
 
   .header .site-nav {
     position: absolute;
@@ -935,7 +931,7 @@ ul {
   }
 
   .user {
-    max-width: 196px;
+    max-width: 236px;
     margin: 0 0 0 auto;
   }
 
