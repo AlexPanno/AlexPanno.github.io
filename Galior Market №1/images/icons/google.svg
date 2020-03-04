@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12" height="12">
+	<defs>
+		<image width="64" height="64" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADdcAAA3XAUIom3gAAAAHdElNRQfgCRcOLS+bK/bJAAAC60lEQVRo3u1ZPW8TQRScsx2DdDgF4AgsFwiXNCCQIAUgUlgIKgqEcBFLTuWK34DSRrTpEQ0FKB+iMgJkA6Gw3CIhbFc5C6zQIBSDdBmKOP6Ib/d27/acJu/KfTsz+3G7b9+zoGm0sYAcMoMvji5+oosuWqjii9XTRVSnTrPEDe5SZj1WucwbpqmTLLNGl+pW5yKTZsgtFtjSoB7aDz7l6bD0eTYCkQ9FPAxOnmUlFPmBvea5IPTz7BihJ8lfvK5LX2TPGD1Z5wkd8jhXDJKTO7ygR79mlH6P9/Qm3+zoyWXdtTdrFcbkjNb4zsd7qGwXFzXU4cCBgz3MYQ4XcRtXkTjkt40rVld99FmFH8/lOhd5xrP/KT7g2xHff5zXm37/Y6fCy74ol/ii7/1Ejz7vQ97mXQ2sNl/q0Vs+Z/4HntXCs2nrCShI6Vc5owWna0xKL9zVSMkBgGXp5Ec7egBgTbL1tNY+GH1aEmwp7/wwApbE//0U6AFuCuhd/2PHBL0tDLTXpzH8BBZwUtD2SmkAQeK9MQE5QYuLN0oInXACYsgIWmrWTjjosALq06CXCXCOBUxLwNHa75hwpBktoKDmHAsQC7h21AJuekf/pgUk0BQ0xXEfzxUgziv4PMYzQUtzCtcx4/wmYNiljegDEsmDd3PfIdKQjAl+F+Iv7btEGpSyJMR2mT5wiiws5yzbQuza0C2ihwlnuSVBLg8dI3maMcXPEtTWWCrX/OOUKX6SYhbG3U0/z1P8KMVr0DrcxViCgjMsc9sHLe/V0UCKhnEWFXLr3udL6CSVzUf86otAdpgd9jKVpsvhlkeazsv+4o61JZ7CosIIwlnRbwuZTtWO24r/HjadrB61NcYVFsl4un4weiX6wV4wWbAge75rPyHBZMmmo5k17kswVbSqjP73uiLClu0anoeuloTghcsWCxNXTkARuqVbl1WWDZVuR2SoFK93ucHSINZTMO0pmijfo38nOHDQxDvrjx7ef9xIEwPjJ3t5AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE2LTA5LTIzVDE0OjQ1OjQ3KzAyOjAwy513fgAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNi0wOS0yM1QxNDo0NTo0NyswMjowMLrAz8IAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="Шапка">
+		<g id="иконки ">
+			<use id="google" href="#img1" transform="matrix(0.188,0,0,0.188,0,0)"/>
+		</g>
+	</g>
+</svg>
