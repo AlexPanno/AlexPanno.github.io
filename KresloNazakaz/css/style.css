@@ -522,9 +522,21 @@ ul {
 }
 
 .master .circle-wrapper {
+  position: relative;
   width: 216px;
   height: 216px;
   border-color: #45433c;
+}
+
+.master .circle-wrapper::before {
+  content: '‘‘';
+  position: absolute;
+  font-size: 172px;
+  color: #f6f2f3;
+  font-family: "Playfair Display";
+  font-weight: 700;
+  top: -90px;
+  left: 150px;
 }
 
 .master-photo-wrapper {
@@ -1134,7 +1146,7 @@ ul {
 
   .master {
     order: 2;
-    margin: 30px 0 0;
+    margin: 60px 0 0;
   }
 
   .our-masters .info-block {
@@ -1339,7 +1351,7 @@ ul {
   .our-masters .info-block .wrapper {
     position: absolute;
     right: 0;
-    bottom: -350px;
+    bottom: -380px;
     left: 0;
     margin: 0;
   }
@@ -1425,7 +1437,7 @@ ul {
   }
 
   .our-masters .info-block .wrapper {
-    bottom: -505px;
+    bottom: -535px;
   }
 
   .cite-author {
