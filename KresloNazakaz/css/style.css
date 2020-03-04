@@ -122,6 +122,12 @@ ul {
   color: #2a2928;
   font-weight: 700;
   text-transform: uppercase;
+  transition: background-color 400ms, color 400ms;
+}
+
+.button:hover {
+  background-color: #cd9b3e;
+  color: #fff;
 }
 
 /*===============/GENERAL STYLES/===============*/
