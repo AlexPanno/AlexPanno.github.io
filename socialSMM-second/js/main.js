@@ -23,7 +23,44 @@ $(document).ready(function () {
   $('.cases-slider').slick({
     dots: true,
     fade: true,
+    draggable: false,
+
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          arrows: false,
+          draggable: true,
+        }
+      }
+    ]
   });
+
+  $('.clients-slider').slick({
+    slidesToShow: 5,
+    arrows: false,
+
+    responsive: [
+      {
+        breakpoint: 1366,
+        settings: {
+          slidesToShow: 4,
+        }
+      },
+      {
+        breakpoint: 1130,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 2,
+        }
+      }
+    ]
+  })
 
   $('.tariff-front .button, .tariff-close-button').on('click',function () {
     if (!($(this).parent().hasClass('rotate-close'))) {
