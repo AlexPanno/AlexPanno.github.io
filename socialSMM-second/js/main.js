@@ -12,13 +12,15 @@ $(document).ready(function () {
     fade: true,
   });
 
-  $('.tariff .button').on('click',function () {
-    if (!($('.tariff').hasClass('first-rotate-y-animation'))) {
-      $('.tariff').addClass('first-rotate-y-animation');
-      $('.tariff').removeClass('second-rotate-y-animation');
-    } else {
-      $('.tariff').removeClass('first-rotate-y-animation');
-      $('.tariff').addClass('second-rotate-y-animation');
+  $('.tariff-front .button, .tariff-close-button').on('click',function () {
+    if (!($(this).parent().hasClass('rotate-close'))) {
+      if ($(this).parent().hasClass('rotate-open')) {
+        $(this).parent().removeClass('rotate-open');
+        $(this).parent().siblings().removeClass('rotate-close');
+      } else {
+        $(this).parent().addClass('rotate-close');
+        $(this).parent().siblings().addClass('rotate-open');
+      }
     }
   });
 
