@@ -24,4 +24,41 @@ $(document).ready(function () {
     }
   });
 
+  $('.tariff-link').on('click', function () {
+    $(this).addClass('primary-color-text');
+  });
+
+  $('.tariff-link').magnificPopup({
+    items: [
+      {
+        src: '#first-tariff-popup',
+        type: 'inline',
+      },
+      {
+        src: '#second-tariff-popup',
+        type: 'inline',
+      },
+      {
+        src: '#third-tariff-popup',
+        type: 'inline',
+      }
+    ],
+
+    fixedContentPos: true,
+
+    index: number,
+  });
+
+
+
+  $('.open-form-button').on('click', function () {
+    $('.tariff-popup-form').removeClass('disabled-tariff-popup-form');
+    $('.open-form-button').addClass('disabled-button');
+  });
+
+  $('.tariff-popup .mfp-close').on('click', function () {
+    $('.tariff-popup-form').addClass('disabled-tariff-popup-form');
+    $('.open-form-button').removeClass('disabled-button');
+  })
+
 });

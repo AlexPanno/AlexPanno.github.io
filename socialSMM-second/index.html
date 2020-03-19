@@ -5,6 +5,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="js/libs/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="js/libs/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="js/libs/magnific-popup/magnific-popup.css">
     <link rel="stylesheet" href="css/style.css">
     <title>SocialSMM</title>
   </head>
@@ -554,21 +555,23 @@
                 </form>
                 <a href="#" class="tariff-link">Открыть полный перечень работ</a>
               </div>
-              <div class="tariff-popup">
-
-              </div>
-            </div>
-            <div class="tariff">
-              <div class="tariff-back">
-                <img src="img/controls/close-cross.svg" alt="close button" class="tariff-close-button">
-                <h4 class="tariff-title">Оставить заявку</h4>
-                <form class="tariff-form" action="index.html" method="post">
+              <div class="tariff-popup mfp-hide" id="first-tariff-popup">
+                <img src="img/controls/close-cross.svg" alt="" class="mfp-close">
+                <h4 class="tariff-popup-title">Список функционала</h4>
+                <div class="tariff-popup-list">
+                  <p class="tariff-popup-list-item">1)</p>
+                  <p class="tariff-popup-list-item">2)</p>
+                  <p class="tariff-popup-list-item">3)</p>
+                </div>
+                <form class="tariff-popup-form disabled-tariff-popup-form" action="index.html" method="post">
                   <input type="text" name="" value="" class="form-input tariff-input">
                   <input type="text" name="" value="" class="form-input tariff-input">
                   <input type="submit" name="" value="Оставить заявку" class="button">
                 </form>
-                <a href="#" class="tariff-link">Открыть полный перечень работ</a>
+                <a href="#" class="button open-form-button">Оставить заявку</a>
               </div>
+            </div>
+            <div class="tariff">
               <div class="tariff-front">
                 <div class="tariff-discount">
                   -25%
@@ -581,6 +584,31 @@
                 </div>
                 <a href="#" class="button">Оставить заявку</a>
                 <a href="#" class="tariff-link">Открыть полный перечень работ</a>
+              </div>
+              <div class="tariff-back">
+                <img src="img/controls/close-cross.svg" alt="close button" class="tariff-close-button">
+                <h4 class="tariff-title">Оставить заявку</h4>
+                <form class="tariff-form" action="index.html" method="post">
+                  <input type="text" name="" value="" class="form-input tariff-input">
+                  <input type="text" name="" value="" class="form-input tariff-input">
+                  <input type="submit" name="" value="Оставить заявку" class="button">
+                </form>
+                <a href="#" class="tariff-link">Открыть полный перечень работ</a>
+              </div>
+              <div class="tariff-popup mfp-hide" id="second-tariff-popup">
+                <img src="img/controls/close-cross.svg" alt="" class="mfp-close">
+                <h4 class="tariff-popup-title">Список функционала</h4>
+                <div class="tariff-popup-list">
+                  <p class="tariff-popup-list-item">1)1</p>
+                  <p class="tariff-popup-list-item">2)1</p>
+                  <p class="tariff-popup-list-item">3)1</p>
+                </div>
+                <form class="tariff-popup-form disabled-tariff-popup-form" action="index.html" method="post">
+                  <input type="text" name="" value="" class="form-input tariff-input">
+                  <input type="text" name="" value="" class="form-input tariff-input">
+                  <input type="submit" name="" value="Оставить заявку" class="button">
+                </form>
+                <a href="#" class="button open-form-button">Оставить заявку</a>
               </div>
             </div>
             <div class="tariff">
@@ -603,6 +631,21 @@
                   <input type="submit" name="" value="Оставить заявку" class="button">
                 </form>
                 <a href="#" class="tariff-link">Открыть полный перечень работ</a>
+              </div>
+              <div class="tariff-popup mfp-hide" id="third-tariff-popup">
+                <img src="img/controls/close-cross.svg" alt="" class="mfp-close">
+                <h4 class="tariff-popup-title">Список функционала</h4>
+                <div class="tariff-popup-list">
+                  <p class="tariff-popup-list-item">1)2</p>
+                  <p class="tariff-popup-list-item">2)2</p>
+                  <p class="tariff-popup-list-item">3)2</p>
+                </div>
+                <form class="tariff-popup-form disabled-tariff-popup-form" action="index.html" method="post">
+                  <input type="text" name="" value="" class="form-input tariff-input">
+                  <input type="text" name="" value="" class="form-input tariff-input">
+                  <input type="submit" name="" value="Оставить заявку" class="button">
+                </form>
+                <a href="#" class="button open-form-button">Оставить заявку</a>
               </div>
             </div>
           </div>
@@ -772,6 +815,7 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs/slick/slick.min.js"></script>
+    <script src="js/libs/magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
