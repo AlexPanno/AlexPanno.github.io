@@ -398,9 +398,10 @@ input {
   justify-content: space-between;
 }
 
-.rere {
-  background-color: red;
-  color: red;
+.work-process .section-info-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 520px;
 }
 
 .stage-number {
@@ -427,7 +428,7 @@ input {
 
 .mobile-chat {
   position: relative;
-  width: 573px;
+  min-width: 573px;
   box-sizing: border-box;
   padding: 50px 0;
 }
@@ -450,9 +451,72 @@ input {
   bottom: 0;
 }
 
-.message:nth-child(3) {
-  margin: 0 0 0 auto;
+.message {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  width: 477px;
+  box-sizing: border-box;
+  margin: 0 0 40px;
 }
+
+.message:last-child {
+  margin: 0;
+}
+
+.user-message {
+  padding: 20px 35px;
+  background-color: #DEDDFF;
+}
+
+.user-message::after {
+  content: url('../img/content/message-rectangle-user.svg');
+  position: absolute;
+  bottom: -40px;
+}
+
+.company-message {
+  flex-direction: row-reverse;
+  background-color: #E0FFDD;
+  text-align: right;
+  padding: 20px 44px;
+  margin: 0 0 40px auto;
+}
+
+.company-message::after {
+  content: url('../img/content/message-rectangle-company.svg');
+  position: absolute;
+  bottom: -40px;
+}
+
+.message-text-content {
+  min-height: 83px;
+}
+
+.message-sendler-name {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.message-text {
+  font-size: 12px;
+  line-height: 15px;
+  margin: 17px 0 0;
+}
+
+.user-message .message-text-content {
+  margin: 0 0 0 20px;
+}
+
+.company-message .message-text-content {
+  margin: 0 20px 0 0;
+}
+
+/* .message:nth-child(3) {
+  margin: 0 0 0 auto;
+} */
 
 /*==================================================================*/
 
@@ -1230,6 +1294,12 @@ input {
     left: 38.9%;
   }
 
+  /*==================================================================*/
+
+  .mobile-chat {
+    margin: 0 0 0 30px;
+  }
+
 }
 
 @media screen and (max-width: 1280px) {
@@ -1249,6 +1319,12 @@ input {
     line-height: 2.34375vw;
     left: 210px;
     right: 10px;
+  }
+
+  /*==================================================================*/
+
+  .mobile-chat {
+    min-width: 52%;
   }
 
 }
@@ -1287,11 +1363,49 @@ input {
     display: none;
   }
 
+  /*==================================================================*/
+
+  .work-process .container {
+    flex-direction: column;
+  }
+
+  .work-process .section-info-content {
+    text-align: center;
+    max-width: none;
+  }
+
+  .stage {
+    width: 100%;
+  }
+
+  .stage-number {
+    margin: 11.5% 0 0;
+  }
+
+  .stage-title {
+    margin: 7.5% 0 0;
+  }
+
+  .stage-description {
+    margin: 35px auto 0;
+  }
+
+  .mobile-chat {
+    margin: 0;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
 
   .header-banner-text {
+    font-size: 2.6vw;
+    line-height: 3.125vw;
+  }
+
+  /*==================================================================*/
+
+  .stage-description {
     font-size: 2.6vw;
     line-height: 3.125vw;
   }
@@ -1330,9 +1444,55 @@ input {
     font-size: 3.333333333333333vw
   }
 
+  /*==================================================================*/
+
+  .work-process .section-info-content {
+    text-align: left;
+  }
+
+  .message {
+    width: 334px;
+    padding: 25px 30px;
+    margin: 0 0 45px;
+  }
+
+  .company-message {
+    margin: 0 0 45px auto;
+  }
+
+  .message-sendler-photo {
+    width: 50px;
+    height: auto;
+  }
+
+  .message-text-content {
+    min-height: 53px;
+  }
+
+  .message-sendler-name {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .message-text {
+    font-size: 10px;
+    line-height: 12px;
+    margin: 13px 0 0;
+  }
+
+  .stage-description {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
 }
 
 @media screen and (max-width: 480px) {
+
+  .section-title {
+    font-size: 30px;
+    line-height: 37px;
+  }
 
   .header-banner-text {
     max-width: 300px;
@@ -1347,6 +1507,25 @@ input {
     width: 285px;
     padding: 0 25px;
     font-size: 15px;
+  }
+
+  /*==================================================================*/
+
+  .stage-title {
+    max-width: 200px;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 35px 0 0;
+  }
+
+  .stage-number {
+    font-size: 25px;
+    line-height: 30px;
+    margin: 40px 0 0;
+  }
+
+  .stage-description {
+    margin: 10px 0 0;
   }
 
 }
