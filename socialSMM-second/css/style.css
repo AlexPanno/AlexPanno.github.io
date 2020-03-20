@@ -70,6 +70,8 @@ input {
 }
 
 .section-title {
+  font-size: 40px;
+  line-height: 49px;
   font-weight: 700;
   color: #171717;
 }
@@ -125,7 +127,6 @@ input {
 /*==================================================================*/
 
 .header {
-  /* height: 100vh; */
   background: url('../img/backgrounds/header-background.png') no-repeat
   bottom / contain;
   box-sizing: border-box;
@@ -166,10 +167,6 @@ input {
 .touch-menu-line:last-child {
   margin: 0;
 }
-
-/* .header-nav {
-  margin: 0 0 0 59px;
-} */
 
 .nav-ul {
   display: flex;
@@ -1293,6 +1290,26 @@ input {
     margin: 40px 0 0;
   }
 
+  /*==================================================================*/
+
+  .footer-top {
+    flex-direction: column;
+  }
+
+  .footer-text {
+    white-space: normal;
+    max-width: 750px;
+  }
+
+  .footer-form {
+    justify-content: flex-start;
+    margin: 30px 0 0;
+  }
+
+  .footer-form-section .button {
+    bottom: 0px;
+  }
+
 }
 
 @media screen and (max-width: 1366px) {
@@ -1456,6 +1473,12 @@ input {
     margin: 0 0 30px;
   }
 
+  /*==================================================================*/
+
+  .footer-form-section {
+    margin: 0 20px 0 0 ;
+  }
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -1615,6 +1638,30 @@ input {
 
   .guarantee-block:last-child {
     margin: 0;
+  }
+
+  /*==================================================================*/
+
+  .footer-text {
+    order: 2;
+    text-align: center;
+    margin: 40px auto 0;
+  }
+
+  .footer-form {
+    order: 1;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer-form-section {
+    margin: 0 0 30px;
+  }
+
+  .footer-form-section .button {
+    width: 100%;
+    position: relative;
+    margin: 20px auto 0;
   }
 
 }
@@ -1915,6 +1962,33 @@ input {
 
   .guarantee-block-text p:last-child {
     margin: 30px 0 0;
+  }
+
+  /*==================================================================*/
+
+  .footer {
+    padding: 50px 0 60px;
+  }
+
+  .footer-bottom {
+    align-items: center;
+    flex-direction: column;
+    margin: 50px auto 0;
+  }
+
+  .footer-text {
+    margin: 40px 0 0;
+  }
+
+  .privacy-policy {
+    margin: 0 auto;
+  }
+
+  .footer .socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0 0;
   }
 
 }
