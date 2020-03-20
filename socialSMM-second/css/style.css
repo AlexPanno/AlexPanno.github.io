@@ -70,8 +70,6 @@ input {
 }
 
 .section-title {
-  font-size: 40px;
-  line-height: 49px;
   font-weight: 700;
   color: #171717;
 }
@@ -1095,9 +1093,10 @@ input {
   padding: 90px 0 67px;
 }
 
-.financial-guarantees .container {
+.guarantee-block-list {
   display: flex;
   justify-content: space-between;
+  margin: 50px 0 0;
 }
 
 .guarantee-block {
@@ -1155,7 +1154,6 @@ input {
 .guarantee-block-text {
   display: flex;
   flex-direction: column;
-  height: 253px;
   text-align: center;
   margin: 47px 0 0;
 }
@@ -1164,8 +1162,12 @@ input {
   white-space: pre-line;
 }
 
-.guarantee-block-text p:first-child {
-  margin: 0 0 auto;
+.guarantee-block-text p:last-child {
+  margin: 37px 0 0;
+}
+
+.guarantee-block:last-child p {
+  white-space: normal;
 }
 
 /*==================================================================*/
@@ -1408,6 +1410,15 @@ input {
 
   /*==================================================================*/
 
+  .guarantee-block-list {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .guarantee-block:last-child {
+    width: 90%;
+  }
+
 }
 
 @media screen and (max-width: 1280px) {
@@ -1485,6 +1496,11 @@ input {
 
   .work-process .container {
     flex-direction: column;
+  }
+
+  .work-process .section-title {
+    font-size: 30px;
+    line-height: 37px;
   }
 
   .work-process .section-info-content {
@@ -1578,6 +1594,27 @@ input {
 
   .clients-slider {
     margin: 40px 0 0;
+  }
+
+  /*==================================================================*/
+
+  .guarantee-block-list {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .guarantee-block {
+    width: 90%;
+    margin: 0 0 30px;
+  }
+
+  .guarantee-block-text p {
+    white-space: normal;
+  }
+
+  .guarantee-block:last-child {
+    margin: 0;
   }
 
 }
@@ -1799,11 +1836,6 @@ input {
     margin: 30px 0 0;
   }
 
-  .tariffs .section-title {
-    font-size: 40px;
-    line-height: 49px;
-  }
-
   /*==================================================================*/
 
   .consultation {
@@ -1869,6 +1901,22 @@ input {
   .clients-slider .slick-dots li button:before {
     content: "";
   }
+
+  /*==================================================================*/
+
+  .guarantee-block {
+    margin: 0 0 50px;
+  }
+
+  .guarantee-block,
+  .guarantee-block:last-child {
+    width: 100%;
+  }
+
+  .guarantee-block-text p:last-child {
+    margin: 30px 0 0;
+  }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -1878,8 +1926,8 @@ input {
   }
 
   .section-title {
-    font-size: 30px;
-    line-height: 37px;
+    font-size: 40px;
+    line-height: 49px;
   }
 
   .header-banner-text {
@@ -1953,8 +2001,6 @@ input {
 
   .free-audit .section-title {
     max-width: 230px;
-    font-size: 40px;
-    line-height: 49px;
   }
 
   .free-audit-form {
