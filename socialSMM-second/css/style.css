@@ -514,10 +514,6 @@ input {
   margin: 0 20px 0 0;
 }
 
-/* .message:nth-child(3) {
-  margin: 0 0 0 auto;
-} */
-
 /*==================================================================*/
 
 .our-cases {
@@ -1578,6 +1574,12 @@ input {
     margin: 0;
   }
 
+  /*==================================================================*/
+
+  .clients-slider {
+    margin: 40px 0 0;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -1830,6 +1832,42 @@ input {
 
   .free-audit .section-info-content p:last-child {
     margin: 0;
+  }
+
+  /*==================================================================*/
+
+  .our-client {
+    width: 157px;
+    height: 91px;
+  }
+
+  .clients-slider .slick-dots {
+    bottom: -50px;
+  }
+
+  .clients-slider .slick-dots li {
+    width: auto;
+    height: auto;
+    margin: 0 5px;
+  }
+
+  .clients-slider .slick-dots li button {
+    width: 30px;
+    height: 10px;
+    background-color: rgba(244, 184, 21, 0.3);
+    border-radius: 20px;
+    padding: 0;
+    transition: width 300ms, background-color 300ms, box-shadow 300ms;
+  }
+
+  .clients-slider .slick-dots li.slick-active button {
+    width: 60px;
+    background-color: #F4B815;
+    box-shadow: 0px 4px 4px rgba(244, 184, 21, 0.4)
+  }
+
+  .clients-slider .slick-dots li button:before {
+    content: "";
   }
 }
 

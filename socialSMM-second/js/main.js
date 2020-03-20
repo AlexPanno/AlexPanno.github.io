@@ -58,6 +58,14 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 2,
         }
+      },
+      {
+        breakpoint: 601,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          dots: true,
+        }
       }
     ]
   })
