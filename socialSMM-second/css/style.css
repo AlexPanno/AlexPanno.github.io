@@ -128,7 +128,7 @@ input {
 
 .header {
   background: url('../img/backgrounds/header-background.png') no-repeat
-  bottom / contain;
+  bottom / auto;
   box-sizing: border-box;
   padding: 30px 0 304px;
 }
