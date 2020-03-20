@@ -144,18 +144,26 @@ input {
 }
 
 .touch-menu {
+  background-blend-mode: overlay;
+  background: url('../img/controls/menu-close.svg') no-repeat
+  #fff center / auto;
   position: absolute;
   left: 0;
   cursor: pointer;
   z-index: 9999;
+  transition: background-color 400ms;
 }
 
 .disabled-opacity {
   opacity: 0;
 }
 
-.touch-menu-active {
-  margin: 34.375px 0 0;
+.active-touch-menu {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.active-touch-menu .touch-menu-line {
+  background-color: transparent;
 }
 
 .touch-menu-line {
@@ -163,6 +171,7 @@ input {
   height: 3.75px;
   background-color: #000;
   margin: 0 0 10px;
+  transition: background-color 400ms;
 }
 
 .touch-menu-line:last-child {
@@ -2199,6 +2208,8 @@ input {
     font-size: 20px;
     line-height: 24px;
   }
+
+
 
   .sum-big-text {
     font-size: 40px;

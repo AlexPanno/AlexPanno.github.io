@@ -14,9 +14,11 @@ $(document).ready(function () {
     if (!($('.hidden-section').hasClass('active-hidden-section'))) {
       $('.top-header .logo, .top-header .header-nav, .header-button, .header-banner').addClass('disabled-opacity');
       $('.hidden-section').addClass('active-hidden-section').fadeIn();
+      $('.touch-menu').addClass('active-touch-menu');
     } else {
       $('.top-header .logo, .top-header .header-nav, .header-button, .header-banner').removeClass('disabled-opacity');
       $('.hidden-section').removeClass('active-hidden-section').fadeOut();
+      $('.touch-menu').removeClass('active-touch-menu');
     }
   });
 
