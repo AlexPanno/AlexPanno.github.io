@@ -1001,6 +1001,10 @@ input {
   bottom: 0;
 }
 
+.consultation .wrapper {
+  min-width: 51%;
+}
+
 .consultation .section-title {
   font-size: 30px;
   line-height: 37px;
@@ -1009,13 +1013,10 @@ input {
 }
 
 .consultation-text {
-  max-width: 549px;
-  min-width: 549px;
   margin: 5px 0 0;
 }
 
 .consultation-form {
-  /* min-width: 53.6986301369863%; */
   margin: 0 0 0 38px;
 }
 
@@ -1283,6 +1284,20 @@ input {
   margin: 0;
 }
 
+@media screen and (max-width: 1440px) {
+
+  .consultation .container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 0 0 230px;
+  }
+
+  .consultation-form {
+    margin: 40px 0 0;
+  }
+
+}
+
 @media screen and (max-width: 1366px) {
 
   .header-button {
@@ -1395,6 +1410,8 @@ input {
     width: 708px;
     margin: 0;
   }
+
+  /*==================================================================*/
 
 }
 
@@ -1524,6 +1541,24 @@ input {
     margin: 0 0 40px;
   }
 
+  /*==================================================================*/
+
+  .consultation .container {
+    align-items: center;
+    text-align: center;
+    padding: 0;
+  }
+
+  .question-mark {
+    width: 117px;
+    height: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: -160px auto 0;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -1558,6 +1593,21 @@ input {
 
   .tariff {
     width: 708px;
+  }
+
+  /*==================================================================*/
+
+  .consultation .section-title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .consultation-form {
+    flex-direction: column;
+  }
+
+  .consultation-form .button {
+    margin: 20px 0 0;
   }
 
 }
@@ -1733,6 +1783,22 @@ input {
     line-height: 49px;
   }
 
+  /*==================================================================*/
+
+  .consultation {
+    padding: 74px 0 60px;
+  }
+
+  .question-mark {
+    margin: -174px auto 0;
+  }
+
+  .consultation-text {
+    font-size: 3.333333333333333vw;
+    line-height: 4vw;
+    margin: 20px 0 0;
+  }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -1785,6 +1851,32 @@ input {
   .tariff,
   .tariff:last-child {
     width: 334px;
+  }
+
+  /*==================================================================*/
+
+  .consultation .container {
+    align-items: flex-start;
+    text-align: left;
+    padding: 0 20px;
+  }
+
+  .consultation .section-title {
+    max-width: 200px;
+  }
+
+  .consultation-text {
+    font-size: 15px;
+    line-height: 18px;
+    max-width: 230px;
+  }
+
+  .consultation-form {
+    align-self: center;
+  }
+
+  .consultation-form .form-input {
+    padding: 0 25px;
   }
 
 }
