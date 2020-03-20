@@ -146,6 +146,7 @@ input {
 .touch-menu {
   position: absolute;
   left: 0;
+  cursor: pointer;
   z-index: 9999;
 }
 
@@ -1320,6 +1321,26 @@ input {
 
   /*==================================================================*/
 
+  .hidden-section-content {
+    flex-direction: column;
+  }
+
+  .hidden-section-nav .nav-ul {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .hidden-section-nav-categories {
+    grid-template-columns: repeat(3, 30%);
+    justify-content: space-between;
+  }
+
+  .hidden-section-form-wrapper {
+    margin: 100px 0 0;
+  }
+
+  /*==================================================================*/
+
   .advantage-text {
     left: 38.9%;
   }
@@ -1448,6 +1469,14 @@ input {
     margin: 0 15px 0 0;
   }
 
+  .hidden-section-nav .nav-ul {
+    flex-wrap: wrap;
+  }
+
+  .hidden-section-nav .nav-link {
+    margin: 0 5px 15px;
+  }
+
   /*==================================================================*/
 
   .advantage-text {
@@ -1507,6 +1536,32 @@ input {
 
   .header-form .button {
     margin: 30px 0 0;
+  }
+
+  /*==================================================================*/
+
+  .hidden-section-nav-categories,
+  .hidden-section-form {
+    display: none;
+  }
+
+  .hidden-section-content,
+  .hidden-section-form-wrapper {
+    margin: 0;
+  }
+
+  .hidden-section-nav .nav-ul {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+  }
+
+  .hidden-section-form-wrapper .socials {
+    margin: 40px 0 0;
+  }
+
+  .hidden-section-nav .nav-ul-item:last-child {
+    margin: 0;
   }
 
   /*==================================================================*/
@@ -2040,6 +2095,41 @@ input {
 
   /*==================================================================*/
 
+  .cases-slider {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.3);
+    margin: 50px 0 0;
+  }
+
+  .case-client {
+    flex-direction: column;
+  }
+
+  .clent-name {
+    margin: 10px 0;
+  }
+
+  .case-slide {
+    border-radius: 20px;
+  }
+
+  .cases-slider .slick-dots {
+    bottom: -55px;
+  }
+
+  .slick-dots li button:before {
+    height: 5px;
+  }
+
+  .case {
+    min-width: inherit;
+    max-width: none;
+    margin: 0;
+  }
+
+  /*==================================================================*/
+
   .tariff,
   .tariff:last-child {
     width: 334px;
@@ -2088,4 +2178,65 @@ input {
     line-height: 18px;
   }
 
+}
+
+@media screen and (max-width: 400px) {
+  .message {
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: 10vw;
+    line-height: 12.25vw
+  }
+
+  .tariff-title {
+    font-size: 25px;
+    line-height: 30px
+  }
+
+  .tariff-price {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .sum-big-text {
+    font-size: 40px;
+  }
+
+  .form-input,
+  .button,
+  .free-audit-form .form-input,
+  .header-form .form-input {
+    width: 100%;
+  }
+
+  .clients-slider .slick-dots {
+    bottom: -100px;
+  }
+
+  .hidden-section .logo {
+    margin: 0 0 0 auto;
+  }
+
+  .free-audit-form .form-input {
+    padding: 0 0 0 10px;
+  }
+
+  /* .free-audit .section-info-content p {
+    font-size: 15px;
+    line-height: 18px;
+  } */
+
+  .tariff-front .button {
+    width: 235px;
+  }
+
+  .top-header {
+    justify-content: flex-end;
+  }
+
+  .guarantee-block .title-wrapper {
+    height: 160px;
+  }
 }
