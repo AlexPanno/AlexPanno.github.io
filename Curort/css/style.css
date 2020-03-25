@@ -1,0 +1,124 @@
+@font-face {
+  font-family: "Circe";
+  src: url('../fonts/Circe-Regular.ttf');
+}
+
+body {
+  font-family: "Circe";
+  padding: 0;
+  margin: 0;
+}
+
+nav, blockquote, ul, li, h1, h2, h3, h4, h5, h6, p, input {
+  padding: 0;
+  margin: 0
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+.container {
+  width: 1192px;
+  margin: 0 auto;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 211px;
+  height: 29px;
+  border-radius: 14px;
+  background-color: #27578c;
+  font-size: 19px;
+  color: #fff;
+}
+
+.menu-button {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid #b0b0b0;
+  background: url('../img/icons/menu-button-rectangle.svg') no-repeat
+  center;
+}
+
+/*--------------------------------------------------------*/
+
+.header {
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 12px 0;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  width: 1440px;
+}
+
+.logo {
+  font-size: 20px;
+  color: #8a8a8a;
+}
+
+.touch-menu-line {
+  width: 18px;
+  height: 2px;
+  background-color: #8a8a8a;
+  margin: 0 0 3px;
+}
+
+.touch-menu {
+  margin: 0 0 0 20px;
+}
+
+.touch-menu-line:last-child {
+  margin: 0;
+}
+
+.header .button {
+  margin: 0 0 0 auto;
+}
+
+.messages, .user {
+  display: flex;
+  align-items: center;
+}
+
+.messages {
+  margin: 0 0 0 15px;
+}
+
+.messages .menu-button {
+  margin: 0 0 0 6px;
+}
+
+.user {
+  margin: 0 0 0 20px;
+}
+
+.user-category {
+  font-size: 19px;
+  color: #8a8a8a;
+  font-family: "Circe";
+  font-weight: 300;
+}
+
+.user .menu-button {
+  margin: 0 0 0 10px;
+}
