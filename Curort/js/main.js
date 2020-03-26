@@ -1,3 +1,69 @@
+function madeFakeInputs() {
+
+  function setFirstElement(firstChild, target) {
+
+    let childText = firstChild.innerText;
+    let curentItem = document.createElement('p');
+
+    curentItem.innerText = childText;
+    curentItem.className = 'curent-item';
+    target.append(curentItem);
+
+  }
+
+  function madeFakeOption(elem, targetContainer) {
+
+    let elemValue = elem.getAttribute('value');
+    let elemText = elem.innerText;
+
+    let fakeOption = document.createElement('div');
+    fakeOption.className = 'select-item';
+    fakeOption.setAttribute('data-value', elemValue);
+    fakeOption.innerText = elemText;
+
+    targetContainer.append(fakeOption)
+  }
+
+  function getValues(item, targetContainer) {
+    let childrenCollection = item.children;
+    let childrenArray = [];
+
+    for (let child of childrenCollection) {
+      childrenArray.push(child);
+    }
+
+    childrenArray.forEach((elem) => {
+      madeFakeOption(elem, targetContainer);
+    });
+  }
+
+  let targets = document.querySelectorAll('.form-select');
+
+  targets.forEach((item) => {
+    let parent = item.parentElement;
+    let firstChild = item.firstElementChild;
+
+    let fakeInput = document.createElement('div');
+    fakeInput.className = 'fake-select';
+    fakeInput.classList.add('disabled-body-select');
+    parent.append(fakeInput);
+
+    let fakeInputHeader = document.createElement('div');
+    fakeInputHeader.className = 'fake-select-header';
+    fakeInput.append(fakeInputHeader);
+
+    let fakeInputBody = document.createElement('div');
+    fakeInputBody.className = 'fake-select-body';
+    fakeInput.append(fakeInputBody);
+
+    getValues(item, fakeInputBody);
+    setFirstElement(firstChild, fakeInputHeader)
+  });
+
+}
+
+madeFakeInputs()
+
 function select () {
 
   let selectHeader = document.querySelectorAll('.fake-select-header');
@@ -14,6 +80,7 @@ function select () {
 
   function selectToggle() {
     this.parentElement.classList.toggle('disabled-body-select');
+    
   }
 
   function selectChoose() {
@@ -30,6 +97,7 @@ function select () {
     let select = this.closest('.fake-select').previousElementSibling;
     let selectId = select.getAttribute('id')
     document.getElementById(selectId).value = value;
+
   }
 
 };
@@ -66,37 +134,8 @@ buttons.forEach((item) => {
   }
 });
 
-
-// let scrollPoint = document.querySelector('.scroll-point');
+// let relocationType = document.querySelector('#relocationType');
+// let relocationTypeParent = relocationType.parentElement;
+// let current = relocationTypeParent.querySelector('.fake-select');
 //
-// scrollPoint.onmousedown = function (event) {
-  // event.preventDefault();
-  //
-  // let shiftX = event.clientX - thumb.getBoundingClientRect().left;
-  //
-  // document.addEventListener('mousemove', onMouseMove);
-  // document.addEventListener('mouseup', onMouseUp);
-  //
-  // function onMouseMove(event) {
-  //   let newLeft = event.clientX - shiftX - slider.getBoundingClientRect().left;
-  //   if (newLeft < 0) {
-  //     newLeft = 0;
-  //   }
-  //   let rightEdge = slider.offsetWidth - thumb.offsetWidth;
-  //   if (newLeft > rightEdge) {
-  //     newLeft = rightEdge;
-  //   }
-  //
-  //   thumb.style.left = newLeft + 'px';
-  // }
-  //
-  // function onMouseUp() {
-  //   document.removeEventListener('mouseup', onMouseUp);
-  //   document.removeEventListener('mousemove', onMouseMove);
-  // }
-  //
-  // thumb.ondragstart = function() {
-  //   return false;
-  // };
-//   alert('hi');
-// }
+// .
