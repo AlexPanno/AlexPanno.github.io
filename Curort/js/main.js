@@ -3,8 +3,6 @@ function select () {
   let selectHeader = document.querySelectorAll('.fake-select-header');
   let selectItem = document.querySelectorAll('.select-item');
 
-
-
   selectHeader.forEach((item) => {
     item.addEventListener('click', selectToggle);
   });
@@ -38,6 +36,37 @@ function select () {
 
 select();
 
+let buttons = document.querySelectorAll('.form-input-button');
+
+buttons.forEach((item) => {
+  item.onclick = function () {
+
+    let buttonsInput = this.parentElement.nextElementSibling;
+    let buttonsInputValue = buttonsInput.value;
+
+    if (this.classList.contains('plus-button')) {
+
+      let currentElement = this.nextElementSibling;
+      let currentValue = currentElement.innerHTML;
+      let value = parseInt(currentValue) + 1;
+      currentElement.innerHTML = value;
+      buttonsInput.value = value;
+
+    } else {
+
+      let currentElement = this.previousElementSibling;
+      let currentValue = currentElement.innerHTML;
+      let value = parseInt(currentValue) - 1;
+
+      if (!(parseInt(currentValue) == 0)) {
+        currentElement.innerHTML = value;
+        buttonsInput.value = value;
+      }
+    }
+  }
+});
+
+
 // let scrollPoint = document.querySelector('.scroll-point');
 //
 // scrollPoint.onmousedown = function (event) {
@@ -69,5 +98,5 @@ select();
   // thumb.ondragstart = function() {
   //   return false;
   // };
-  alert('hi');
-}
+//   alert('hi');
+// }
