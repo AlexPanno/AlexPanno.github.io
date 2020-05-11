@@ -136,12 +136,14 @@ input {
   margin: 0 0 0 10px;
 }
 
+.content-wrapper {
+  display: flex;
+}
+
 /*--------------------------------------------------------*/
 
 .side-bar {
-  position: fixed;
   width: 225px;
-  height: 100%;
   background-image: linear-gradient(-2deg, #27578b 5%, #2d3047 100%, #ea0000 100%);
   box-sizing: border-box;
   padding: 45px 25px 0 40px;
@@ -150,8 +152,7 @@ input {
 /*--------------------------------------------------------*/
 
 .main {
-  box-sizing: border-box;
-  padding: 0 0 0 225px;
+  flex: 1;
 }
 
 /*--------------------------------------------------------*/
@@ -326,30 +327,87 @@ input {
 
 .big-input-wrapper {
   flex-direction: column;
-  overflow-y: scroll;
-  box-sizing: border-box;
-  padding: 0 0 40px 30px;
 }
 
-.big-input-wrapper::-webkit-scrollbar {
+.big-input-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-y: scroll;
+  box-sizing: border-box;
+  padding: 0 0 0 10px;
+}
+
+.big-input-content::-webkit-scrollbar {
   width: 4px;
   background-color: #27578c;
 }
 
-.big-input-wrapper::-webkit-scrollbar-track {
+.big-input-content::-webkit-scrollbar-track {
   width: 4px;
   background-color: #d0d0d0;
 }
 
-.big-input-wrapper::-webkit-scrollbar-thumb {
+.big-input-content::-webkit-scrollbar-thumb {
   width: 4px;
   background-color: #27578c;
   height: 20px;
 }
 
-.big-input-wrapper p {
+.big-input-wrapper p,
+.big-input-wrapper input {
   font-size: 20px;
+  line-height: 26px;
   color: #5f5f5f;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapper input {
+  z-index: 1;
+  /* opacity: 0; */
+}
+
+.input-wrapper label {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 0 0 0 5px;
+  cursor: pointer;
+}
+
+.input-wrapper label::before {
+  content: '';
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  border-radius: 11px;
+  background-color: #78aedf;
+  opacity: 0;
+  left: -23px;
+  transition: opacity 400ms;
+}
+
+.input-wrapper label:hover::before {
+  opacity: 1;
+}
+
+.input-wrapper label::after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 8px;
+  background-color: #f96900;
+  left: -20px;
+  transition: opacity 400ms;
+}
+
+.input-check:checked + .input-wrapper {
+  background-color: green;
 }
 
 .input-categories {
@@ -367,7 +425,22 @@ input {
   width: 100%;
   height: 100%;
   background-color: #fff;
-  opacity: 0;
+  font-size: 20px;
+  font-family: "Circe";
+  color: #5f5f5f;
+  box-sizing: border-box;
+  padding: 0 0 0 12px;
+}
+
+.main-input-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 43px;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 0 0 0 10px;
+  left: 0;
 }
 
 .form-input-buttons {
@@ -401,14 +474,6 @@ input {
   background-image: url('../img/icons/minus.svg');
 }
 
-.form-input-button p {
-  font-size: 55px;
-  letter-spacing: -1px;
-  color: #fff;
-  line-height: 25px;
-  margin: auto;
-}
-
 .form-input-buttons .current-value {
   font-size: 20px;
   color: #5f5f5f;
@@ -435,8 +500,230 @@ input {
 
 .search-results {
   background-color: #fff;
+  box-sizing: border-box;
+  padding: 62px 0;
 }
 
-.search-results .container {
-  
+.results-panel {
+  position: relative;
+  border-bottom: 1px solid #27578c;
+}
+
+.results-panel-top {
+  display: flex;
+  align-items: center;
+  background-color: #27578c;
+  box-sizing: border-box;
+  padding: 8px 10px;
+}
+
+.results-panel-top p {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 300;
+  margin: 0 70px 0 0;
+}
+
+.results-panel-top p:last-child {
+  margin: 0;
+}
+
+.results-panel-top .button {
+  width: 172px;
+  background-color: #f96900;
+  border: none;
+  filter: drop-shadow(-0.14px 3.998px 5px rgba(117,121,123,0.19));
+  margin: 0 0 0 auto;
+}
+
+.main-panel-section {
+  display: flex;
+  border-bottom: 1px solid #27578c;
+}
+
+.panel-section {
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 0 25px;
+}
+
+.hotel {
+  display: flex;
+  box-sizing: border-box;
+  padding: 25px 0 0;
+}
+
+.hotel-image-wrapper {
+  position: relative;
+}
+
+.hotel-info {
+  box-sizing: border-box;
+  padding: 0 0 0 10px;
+}
+
+.hotel-name {
+  font-size: 17px;
+  line-height: 16px;
+  color: #27578c;
+  text-transform: uppercase;
+}
+
+.hotel-ratings {
+  display: flex;
+  margin: 5px 0 0;
+}
+
+.hotel-rating {
+  display: flex;
+  align-items: center;
+  height: 21px;
+  border-radius: 11px;
+  border: 1px solid #f96900;
+  box-sizing: border-box;
+  padding: 0 5px;
+  margin: 0 6px 0 0;
+}
+
+.likes-number {
+  font-size: 17px;
+  line-height: 14px;
+  color: #5f5f5f;
+  margin: 2px 0 0 5px;
+}
+
+.assessment {
+  display: flex;
+  margin: 0 0 0 5px;
+}
+
+.assessment-item {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #f96900;
+  border: 1px solid #f96900;
+  margin: 0 2px 0 0;
+}
+
+.empty-assessment-item {
+  background-color: transparent;
+}
+
+.hotel-reviews {
+  font-size: 17px;
+  line-height: 21px;
+  color: #78aedf;
+}
+
+.hotel-address {
+  font-size: 17px;
+  color: #8a8a8a;
+  margin: 5px 0 0;
+}
+
+.hotel-features {
+  display: flex;
+  margin: 15px 0 0;
+}
+
+.hotel-feature {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #78aedf;
+  margin: 0 5px 0 0;
+}
+
+.hotel-feature img {
+  margin: auto;
+}
+
+.hotel-info .button {
+  width: 181px;
+  height: 21px;
+  background-color: #27578c;
+  font-size: 17px;
+  margin: 12px 0 0;
+}
+
+.panel-info-block {
+  font-size: 19px;
+  line-height: 24px;
+  color: #8a8a8a;
+  box-sizing: border-box;
+  padding: 25px 0 0;
+  margin: 0 0 0 125px;
+}
+
+.main-panel-section .panel-info-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0 0;
+}
+
+.tour-price-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 192px;
+  color: #8a8a8a;
+  line-height: 22px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 20px 0 0;
+  margin: 0 10px 0 auto;
+}
+
+.tour-price {
+  white-space: pre-line;
+}
+
+.big-text {
+  font-size: 30px;
+}
+
+.black-text {
+  color: #000;
+}
+
+.tour-price-info .button {
+  justify-content: flex-end;
+  width: 172px;
+  height: 44px;
+  border-radius: 5px;
+  filter: drop-shadow(-0.14px 3.998px 5px rgba(117,121,123,0.19));
+  background-color: #f96900;
+  box-sizing: border-box;
+  padding: 0 10px 0 0;
+  margin: 25px 0 0;
+}
+
+.tour-price-info .button .menu-button {
+  margin: 0 0 0 15px;
+}
+
+.operators-number {
+  margin: auto 0 5px;
+}
+
+.panel-section .panel-info-block:first-child {
+  margin: 0 0 0 10px;
+}
+
+.tour-price-info-link {
+  font-size: 19px;
+  color: #78aedf;
+  margin: auto 0 0;
+}
+
+.results-panel-button {
+  width: 236px;
+  height: 44px;
+  border-radius: 0 0 6px 6px;
+  border: none;
+  background-color: #27578c;
+  margin: 0 auto;
 }

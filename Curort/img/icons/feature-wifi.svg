@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 17" width="20" height="17">
+	<defs>
+		<image width="20" height="17" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAMAAADqmnyMAAAAAXNSR0IB2cksfwAAASZQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////3AapoQAAAGJ0Uk5TACyI4v/+zHEPJrDrxbXO9vByBGn40yUFPpfxxx/gUQEGLUA/IgMQivzqrw0JZLzvqUU57Uhj7MEgjvWYRB5cvzICurMbTf1VVI/SwGwLR5Pl5NhzSlb3JCFJlHU4z3xOriuvg7JHAAAA4UlEQVR4nF2Oa1sBURSF19RWSBhGch3SYIhyv9QkUagQXZBL+f9/onNc6jHvh7PXWXs/a28AEPb2aY3h4NAIjsnMv0cW87HVxoRddABOicglnqz67lOPl8jnB1EgKAOh8FnkXAGisTipoEQSF6m0xDMurzJAVs0hL6NQ5I4U52/JhLLAkipE1eubJKDd1tiiO55ev6dGExse1MfWSoTadQidJ3vx+aULrbftK33D+vjXCP7QBjR8e//of1Ln38RIdPMyFmXsMPmaGqFjxhLnis5c8D2azvxmXkA/iVTpZ7nVvyrxGAK+lw2iAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Слой 1" href="#img1" x="0" y="0" />
+</svg>

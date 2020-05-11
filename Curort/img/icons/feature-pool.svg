@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 20" width="25" height="20">
+	<defs>
+		<image width="25" height="20" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAUCAMAAABPqWaPAAAAAXNSR0IB2cksfwAAAWVQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////JBh0kQAAAHd0Uk5TACyr17lCG/D//DRxk3yeO2J7+v2WAg8uFgF/4u6bBpGja4VHWSnxj6L2OBXfoDCO7SefwwOzv7fhFxAMwcwLFBpgEWG93H4FXSUNda+1WqZ2rCYOkMSpM2m8x2+XpWSVZbjCjKhFWzIesFKKNiAiVzEdK21EbEl8NBWoAAABDElEQVR4nGNggANGJmYWVgYsgI2dg4ODkwuLDDcHCPBgkeEFy/BhkeEHywhgs0hQiENYRBSbDIOYuAQWUUkpaXYQkJGVQ5OR54ABBUkUCUUOBFBCllAWRpLhUEFIqKpxcKhDhTU4ODS1YBLaOhwcupJQGT19Dg4DQ6iMEQeHsRxcxsSUg8MMKmPOYWHJYAWTYbC24bAFi9vZOzhaMjA4ObsAxV3dgAa5e3jKeTEweBv7+BoyWKuz+Jj7+QfI2wT6BjEEh4SGyTOEi8hGKERGRcfExpnahEbE+yckJrkkJKekMqSlZ8hnZmUn5uTKm6pkm+fk6fvkKzEVFKaCrSoqLgEFiWppGYgKUgTHOQDjoyg4vcU6FAAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="результаты поиска">
+		<g id="описание отеля">
+			<g id="краткое описание отеля">
+				<g id="иконки описания">
+					<g id="бассейн">
+						<use id="Слой 19" href="#img1" x="0" y="0" />
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

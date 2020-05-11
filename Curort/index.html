@@ -25,224 +25,473 @@
         </div>
       </div>
     </header>
-    <div class="side-bar">
+    <div class="content-wrapper">
+      <div class="side-bar">
 
-    </div>
-    <main class="main">
-      <section class="tour-search">
-        <div class="container">
-          <h2 class="tour-search-title">Поиск туров и бронирование авиабилетов</h2>
-          <div class="tour-search-form-wrapper">
-            <div class="tour-search-form-menu">
-              <div class="button">Поиск туров</div>
-              <div class="button">Горящие туры</div>
+      </div>
+      <main class="main">
+        <section class="tour-search">
+          <div class="container">
+            <h2 class="tour-search-title">Поиск туров и бронирование авиабилетов</h2>
+            <div class="tour-search-form-wrapper">
+              <div class="tour-search-form-menu">
+                <div class="button">Поиск туров</div>
+                <div class="button">Горящие туры</div>
+              </div>
+              <form class="tour-search-form" action="index.html" method="post">
+                <div class="form-section">
+                  <div class="form-input-wrapper">
+                    <label for="departureCity" class="form-input-name">Город Вылета</label>
+                    <div class="input-container">
+                      <div class="menu-button"></div>
+                      <select class="form-select" name="departureCity" id="departureCity">
+                        <option value="1">Казань</option>
+                        <option value="2">Санкт-Петербург</option>
+                        <option value="3">Мальдивы</option>
+                        <option value="4">Багамские острова</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-section">
+                  <div class="form-input-wrapper">
+                    <label for="destination" class="form-input-name">Куда</label>
+                    <div class="input-container">
+                      <div class="menu-button"></div>
+                      <select class="form-select" name="destination" id="destination">
+                        <option value="5">Все страны и курорты</option>
+                        <option value="6">Параметр 6</option>
+                        <option value="7">Параметр 7</option>
+                        <option value="8">Параметр 8</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-section">
+                  <div class="form-input-wrapper">
+                    <label for="dataInterval" class="form-input-name">Интервал Дат Вылета</label>
+                    <div class="input-container">
+
+                    </div>
+                  </div>
+                </div>
+                <div class="form-section">
+                  <div class="form-input-wrapper small-input-wrapper">
+                    <label for="" class="form-input-name">Взрослых</label>
+                    <div class="input-container">
+                      <div class="form-input-buttons">
+                        <div class="form-input-button plus-button"></div>
+                        <p data-value="2" class="current-value">2</p>
+                        <div class="form-input-button minus-button"></div>
+                      </div>
+                      <input type="text" name="" value="2" class="form-input" id="adultNumber">
+                    </div>
+                  </div>
+                  <div class="form-input-wrapper small-input-wrapper">
+                    <label for="" class="form-input-name">Детей</label>
+                    <div class="input-container">
+                      <div class="form-input-buttons">
+                        <div class="form-input-button plus-button"></div>
+                        <p data-value="2" class="current-value">2</p>
+                        <div class="form-input-button minus-button"></div>
+                      </div>
+                      <input type="text" name="" value="2" class="form-input" id="childNumber">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-section">
+                  <div class="form-input-wrapper small-input-wrapper">
+                    <label for="travelTime" class="form-input-name">Время в пути</label>
+                    <div class="input-container">
+                      <div class="menu-button"></div>
+                      <select class="form-select" name="dataInterval" id="dataInterval">
+                        <option value="9">7</option>
+                        <option value="10">8</option>
+                        <option value="11">9</option>
+                        <option value="12">10</option>
+                        <option value="13">11</option>
+                        <option value="14">12</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-input-wrapper small-input-wrapper">
+                    <label for="transplantationNumber" class="form-input-name">Кол-во пересадок</label>
+                    <div class="input-container">
+                      <div class="menu-button"></div>
+                      <select class="form-select" name="transplantationNumber" id="transplantationNumber">
+                        <option value="15">2</option>
+                        <option value="16">3</option>
+                        <option value="17">4</option>
+                        <option value="18">6</option>
+                      </select>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="form-section">
+                  <div class="form-input-wrapper">
+                    <label for="citiesPool" class="form-input-name">Пул городов</label>
+                    <div class="input-container">
+                      <div class="menu-button"></div>
+                      <select class="form-select" name="citiesPool" id="citiesPool">
+                        <option value="19">Все страны и курорты</option>
+                        <option value="20">Параметр</option>
+                        <option value="21">Параметр</option>
+                        <option value="22">Параметр</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-section">
+
+                </div>
+                <div class="form-section">
+                  <div class="form-input-wrapper">
+                    <label for="relocationType" class="form-input-name">Типы переездов</label>
+                    <div class="input-container">
+                      <div class="menu-button"></div>
+                      <select class="form-select" name="relocationType" id="relocationType">
+                        <option value="23">Выбрать все</option>
+                        <option value="24">Параметр 22</option>
+                        <option value="25">Параметр 23</option>
+                        <option value="26">Параметр 24</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-section">
+                  <div class="form-input-wrapper">
+                    <label for="" class="form-input-name">Курорт</label>
+                    <div class="input-container">
+                      <input type="text" name="" value="" placeholder="Введите название курорта" class="form-input">
+                    </div>
+                    <div class="input-container big-input-wrapper">
+                      <div class="main-input-wrapper input-wrapper">
+                        <input type="checkbox" name="" value="">
+                        <label for="">Выбраны все курорты</label>
+                      </div>
+                      <div class="big-input-content">
+                        <div class="input-wrapper">
+                          <input type="checkbox" name="" value="" class="input-check" id="check1">
+                          <label for="check1">Coral Travel</label>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="checkbox" name="" value="" class="">
+                          <label for="">Coral Travel</label>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="checkbox" name="" value="" class="">
+                          <label for="">Coral Travel</label>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="checkbox" name="" value="" class="">
+                          <label for="">Coral Travel</label>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="checkbox" name="" value="" class="">
+                          <label for="">Coral Travel</label>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="checkbox" name="" value="" class="">
+                          <label for="">Coral Travel</label>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="checkbox" name="" value="" class="">
+                          <label for="">Coral Travel</label>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="checkbox" name="" value="" class="">
+                          <label for="">Coral Travel</label>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="checkbox" name="" value="" class="">
+                          <label for="">Coral Travel</label>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="checkbox" name="" value="" class="">
+                          <label for="">Coral Travel</label>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="checkbox" name="" value="" class="">
+                          <label for="">Coral Travel</label>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="checkbox" name="" value="" class="">
+                          <label for="">Coral Travel</label>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="checkbox" name="" value="" class="">
+                          <label for="">Coral Travel</label>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="checkbox" name="" value="" class="">
+                          <label for="">Coral Travel</label>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="checkbox" name="" value="" class="">
+                          <label for="">Coral Travel</label>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="checkbox" name="" value="" class="">
+                          <label for="">Coral Travel</label>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="checkbox" name="" value="" class="">
+                          <label for="">Coral Travel</label>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="checkbox" name="" value="" class="">
+                          <label for="">Coral Travel</label>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="checkbox" name="" value="" class="">
+                          <label for="">Coral Travel</label>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="checkbox" name="" value="" class="">
+                          <label for="">Coral Travel</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-section">
+                  <div class="form-input-wrapper">
+                    <label for="" class="form-input-name">Выбор отеля</label>
+                    <div class="input-container">
+                      <input type="text" name="" value="" placeholder="Введите название отеля" class="form-input">
+                    </div>
+                    <div class="input-container big-input-wrapper">
+                      <div class="main-input-wrapper input-wrapper">
+                        <input type="checkbox" name="" value="">
+                        <label for="">Выбраны все отели</label>
+                      </div>
+                      <div class="big-input-content">
+                        <div class="input-wrapper">
+                          <input type="checkbox" name="" value="" class="">
+                          <label for="">Coral Travel</label>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="checkbox" name="" value="" class="">
+                          <label for="">Coral Travel</label>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="checkbox" name="" value="" class="">
+                          <label for="">Coral Travel</label>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="checkbox" name="" value="" class="">
+                          <label for="">Coral Travel</label>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="checkbox" name="" value="" class="">
+                          <label for="">Coral Travel</label>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="checkbox" name="" value="" class="">
+                          <label for="">Coral Travel</label>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="checkbox" name="" value="" class="">
+                          <label for="">Coral Travel</label>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="checkbox" name="" value="" class="">
+                          <label for="">Coral Travel</label>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="checkbox" name="" value="" class="">
+                          <label for="">Coral Travel</label>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="checkbox" name="" value="" class="">
+                          <label for="">Coral Travel</label>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="checkbox" name="" value="" class="">
+                          <label for="">Coral Travel</label>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="checkbox" name="" value="" class="">
+                          <label for="">Coral Travel</label>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="checkbox" name="" value="" class="">
+                          <label for="">Coral Travel</label>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="checkbox" name="" value="" class="">
+                          <label for="">Coral Travel</label>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="checkbox" name="" value="" class="">
+                          <label for="">Coral Travel</label>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="checkbox" name="" value="" class="">
+                          <label for="">Coral Travel</label>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="checkbox" name="" value="" class="">
+                          <label for="">Coral Travel</label>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="checkbox" name="" value="" class="">
+                          <label for="">Coral Travel</label>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="checkbox" name="" value="" class="">
+                          <label for="">Coral Travel</label>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="checkbox" name="" value="" class="">
+                          <label for="">Coral Travel</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-section">
+                  <div class="form-input-wrapper small-input-wrapper">
+                    <label for="nightsStartNumber" class="form-input-name">Ночей от</label>
+                    <div class="input-container">
+                      <div class="menu-button"></div>
+                      <select class="form-select" name="" id="nightsStartNumber">
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">10</option>
+                        <option value="">12</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-input-wrapper small-input-wrapper">
+                    <label for="nightsEndNumber" class="form-input-name">До</label>
+                    <div class="input-container">
+                      <div class="menu-button"></div>
+                      <select class="form-select" name="" id="nightsEndNumber">
+                        <option value="">14</option>
+                        <option value="">18</option>
+                        <option value="">22</option>
+                        <option value="">28</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-input-wrapper input-categories">
+
+                  </div>
+                </div>
+                <div class="form-section">
+                  <div class="form-input-wrapper">
+                    <label for="" class="form-input-name">Туроператор</label>
+                    <div class="input-container">
+
+                    </div>
+                    <div class="input-container big-input-wrapper">
+
+                    </div>
+                  </div>
+                </div>
+              </form>
             </div>
-            <form class="tour-search-form" action="index.html" method="post">
-              <div class="form-section">
-                <div class="form-input-wrapper">
-                  <label for="departureCity" class="form-input-name">Город Вылета</label>
-                  <div class="input-container">
-                    <div class="menu-button"></div>
-                    <select class="form-select" name="departureCity" id="departureCity">
-                      <option value="1">Казань</option>
-                      <option value="2">Санкт-Петербург</option>
-                      <option value="3">Мальдивы</option>
-                      <option value="4">Багамские острова</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="form-section">
-                <div class="form-input-wrapper">
-                  <label for="destination" class="form-input-name">Куда</label>
-                  <div class="input-container">
-                    <div class="menu-button"></div>
-                    <select class="form-select" name="destination" id="destination">
-                      <option value="5">Все страны и курорты</option>
-                      <option value="6">Параметр 6</option>
-                      <option value="7">Параметр 7</option>
-                      <option value="8">Параметр 8</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="form-section">
-                <div class="form-input-wrapper">
-                  <label for="dataInterval" class="form-input-name">Интервал Дат Вылета</label>
-                  <div class="input-container">
-
-                  </div>
-                </div>
-              </div>
-              <div class="form-section">
-                <div class="form-input-wrapper small-input-wrapper">
-                  <label for="" class="form-input-name">Взрослых</label>
-                  <div class="input-container">
-                    <div class="form-input-buttons">
-                      <div class="form-input-button plus-button"></div>
-                      <p data-value="2" class="current-value">2</p>
-                      <div class="form-input-button minus-button"></div>
-                    </div>
-                    <input type="text" name="" value="2" class="form-input" id="adultNumber">
-                  </div>
-                </div>
-                <div class="form-input-wrapper small-input-wrapper">
-                  <label for="" class="form-input-name">Детей</label>
-                  <div class="input-container">
-                    <div class="form-input-buttons">
-                      <div class="form-input-button plus-button"></div>
-                      <p data-value="2" class="current-value">2</p>
-                      <div class="form-input-button minus-button"></div>
-                    </div>
-                    <input type="text" name="" value="2" class="form-input" id="childNumber">
-                  </div>
-                </div>
-              </div>
-              <div class="form-section">
-                <div class="form-input-wrapper small-input-wrapper">
-                  <label for="travelTime" class="form-input-name">Время в пути</label>
-                  <div class="input-container">
-                    <div class="menu-button"></div>
-                    <select class="form-select" name="dataInterval" id="dataInterval">
-                      <option value="9">7</option>
-                      <option value="10">8</option>
-                      <option value="11">9</option>
-                      <option value="12">10</option>
-                      <option value="13">11</option>
-                      <option value="14">12</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form-input-wrapper small-input-wrapper">
-                  <label for="transplantationNumber" class="form-input-name">Кол-во пересадок</label>
-                  <div class="input-container">
-                    <div class="menu-button"></div>
-                    <select class="form-select" name="transplantationNumber" id="transplantationNumber">
-                      <option value="15">2</option>
-                      <option value="16">3</option>
-                      <option value="17">4</option>
-                      <option value="18">6</option>
-                    </select>
-
-                  </div>
-                </div>
-              </div>
-              <div class="form-section">
-                <div class="form-input-wrapper">
-                  <label for="citiesPool" class="form-input-name">Пул городов</label>
-                  <div class="input-container">
-                    <div class="menu-button"></div>
-                    <select class="form-select" name="citiesPool" id="citiesPool">
-                      <option value="19">Все страны и курорты</option>
-                      <option value="20">Параметр</option>
-                      <option value="21">Параметр</option>
-                      <option value="22">Параметр</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="form-section">
-
-              </div>
-              <div class="form-section">
-                <div class="form-input-wrapper">
-                  <label for="relocationType" class="form-input-name">Типы переездов</label>
-                  <div class="input-container">
-                    <div class="menu-button"></div>
-                    <select class="form-select" name="relocationType" id="relocationType">
-                      <option value="23">Выбрать все</option>
-                      <option value="24">Параметр 22</option>
-                      <option value="25">Параметр 23</option>
-                      <option value="26">Параметр 24</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="form-section">
-                <div class="form-input-wrapper">
-                  <label for="" class="form-input-name">Курорт</label>
-                  <div class="input-container">
-
-                  </div>
-                  <div class="input-container big-input-wrapper">
-
-                  </div>
-                </div>
-
-              </div>
-              <div class="form-section">
-                <div class="form-input-wrapper">
-                  <label for="" class="form-input-name">Выбор отеля</label>
-                  <div class="input-container">
-
-                  </div>
-                  <div class="input-container big-input-wrapper">
-                    <p>Coral Travel</p>
-                    <p>Coral Travel</p>
-                    <p>Coral Travel</p>
-                    <p>Coral Travel</p>
-                    <p>Coral Travel</p>
-                    <p>Coral Travel</p>
-                    <p>Coral Travel</p>
-                    <p>Coral Travel</p>
-                    <p>Coral Travel</p>
-                    <p>Coral Travel</p>
-                    <p>Coral Travel</p>
-                    <p>Coral Travel</p>
-                    <p>Coral Travel</p>
-                    <p>Coral Travel</p>
-                    <p>Coral Travel</p>
-                  </div>
-                </div>
-              </div>
-              <div class="form-section">
-                <div class="form-input-wrapper small-input-wrapper">
-                  <label for="nightsStartNumber" class="form-input-name">Ночей от</label>
-                  <div class="input-container">
-                    <select class="form-select" name="" id="nightsStartNumber">
-                      <option value="">7</option>
-                      <option value="">8</option>
-                      <option value="">10</option>
-                      <option value="">12</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form-input-wrapper small-input-wrapper">
-                  <label for="nightsEndNumber" class="form-input-name">До</label>
-                  <div class="input-container">
-                    <select class="form-select" name="" id="nightsEndNumber">
-                      <option value="">14</option>
-                      <option value="">18</option>
-                      <option value="">22</option>
-                      <option value="">28</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form-input-wrapper input-categories">
-
-                </div>
-              </div>
-              <div class="form-section">
-                <div class="form-input-wrapper">
-                  <label for="" class="form-input-name">Туроператор</label>
-                  <div class="input-container">
-
-                  </div>
-                  <div class="input-container big-input-wrapper">
-
-                  </div>
-                </div>
-              </div>
-            </form>
           </div>
-        </div>
-      </section>
-      <section class="search-results">
-        <div class="container">
+        </section>
+        <section class="search-results">
+          <div class="container">
+            <div class="results-panel">
+              <div class="results-panel-top">
+                <p>Поиск завершен на 100%</p>
+                <p>Найдено 10389 туров по цене от 15 811 Р</p>
+                <div class="button">Показать</div>
+              </div>
+              <div class="results-panel-container">
+                <div class="main-panel-section">
+                  <div class="hotel">
+                    <div class="hotel-image-wrapper">
+                      <img src="img/content/hotel-image.png" alt="hotel image" class="hotel-image">
+                    </div>
+                    <div class="hotel-info">
+                      <p class="hotel-name">KLEOPATRA ALIS HOTEL</p>
+                      <div class="hotel-ratings">
+                        <div class="hotel-rating">
+                          <img src="img/icons/like-icon.svg" alt="like icon">
+                          <p class="likes-number">7,1</p>
+                        </div>
+                        <div class="hotel-rating">
+                          <img src="img/icons/trip.svg" alt="like icon">
+                          <div class="assessment">
+                            <div class="assessment-item"></div>
+                            <div class="assessment-item"></div>
+                            <div class="assessment-item"></div>
+                            <div class="assessment-item empty-assessment-item"></div>
+                            <div class="assessment-item empty-assessment-item"></div>
+                          </div>
+                        </div>
+                        <a href="#" class="hotel-reviews">33 отзыва</a>
+                      </div>
+                      <p class="hotel-address">Турция, Аланья, 2 линия</p>
+                      <div class="hotel-features">
+                        <div class="hotel-feature">
+                          <img src="img/icons/feature-beach.svg" alt="hotel feature icon">
+                        </div>
+                        <div class="hotel-feature">
+                          <img src="img/icons/feature-playground.svg" alt="hotel feature icon">
+                        </div>
+                        <div class="hotel-feature">
+                          <img src="img/icons/feature-bar.svg" alt="hotel feature icon">
+                        </div>
+                        <div class="hotel-feature">
+                          <img src="img/icons/feature-wifi.svg" alt="hotel feature icon">
+                        </div>
+                        <div class="hotel-feature">
+                          <img src="img/icons/feature-spa.svg" alt="hotel feature icon">
+                        </div>
+                        <div class="hotel-feature">
+                          <img src="img/icons/feature-pool.svg" alt="hotel feature icon">
+                        </div>
+                      </div>
+                      <a href="#" class="button">Подробнее об отеле</a>
+                    </div>
+                  </div>
+                  <div class="panel-info-block">
+                    <p class="black-text">Вылеты 03 мар — 10 мар</p>
+                    <p>7 - 14 ночей</p>
+                  </div>
+                  <div class="tour-price-info">
+                    <p class="tour-price">От <span class="big-text black-text">15 416</span> руб.
+                      121 тур
+                    </p>
+                    <div class="button">
+                      <p>Скрыть тур</p>
+                      <div class="menu-button"></div>
+                    </div>
+                    <p class="operators-number">от 4 операторов</p>
+                  </div>
+                </div>
+                <div class="panel-section">
+                  <div class="panel-info-block">
+                    <p class="black-text">04 мар (ср) - 12 мар</p>
+                    <p>8 ночей</p>
+                  </div>
+                  <div class="panel-info-block">
+                    <p class="black-text">Чартерный рейс</p>
+                    <p><span class="black-text">RO</span> — Без питания</p>
+                    <p><span class="black-text">DBL</span> — STANDARD ROOM WITHOUT AIR CONDITIONS</p>
+                    <p>Цена с учетом топливного сбора = <span class="black-text">21 483 руб.</span></p>
+                  </div>
+                  <div class="tour-price-info">
+                    <p class="black-text big-text">15 811 руб.</p>
+                    <a href="#" class="tour-price-info-link">Подробнее...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="button results-panel-button">Показать еще<span class="results-number"> 10</span></div>
+          </div>
+        </section>
+      </main>
+    </div>
 
-        </div>
-      </section>
-    </main>
+
     <script src="js/main.js"></script>
   </body>
 </html>
