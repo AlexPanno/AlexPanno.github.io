@@ -192,6 +192,45 @@ input {
 }
 
 /*===============/ABOUT US/===============*/
+
+.prices {
+  box-sizing: border-box;
+  padding: 100px;
+}
+
+.prices .section-title {
+  margin: 0 0 0 auto;
+}
+
+.prices .section-title:after {
+  margin: 10px 0 0 auto;
+}
+
+.prices-table {
+  display: grid;
+  grid-template-columns: 25% auto;
+  grid-gap: 50px;
+  box-sizing: border-box;
+  margin: 50px 0 0;
+}
+
+.prices-table-column-title {
+  font-size: 28px;
+}
+
+.table-column-content {
+  border: 1px solid yellow;
+  list-style-type: none;
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 20px 0 0;
+}
+
+.table-column-content-item {
+  font-size: 24px;
+  margin: 20px 0 0;
+}
+
 /*===============FOOTER===============*/
 
 .footer {
