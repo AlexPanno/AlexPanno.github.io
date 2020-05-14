@@ -36,11 +36,13 @@ input {
 }
 
 .button {
-  font-weight: 700;
+  display: block;
+  width: fit-content;
   border: 1px solid yellow;
-  /* border-radius: 10px; */
+  font-weight: 700;
   box-sizing: border-box;
   padding: 20px 60px;
+  margin: 50px 0 0;
   transition: transform 400ms, background-color 400ms, color 400ms;
 }
 
@@ -56,6 +58,12 @@ input {
   font-weight: 700;
 }
 
+.section-subtitle {
+  font-size: 20px;
+  font-weight: 300;
+  margin: 20px 0 0;
+}
+
 .section-title::after {
   content: '';
   display: block;
@@ -65,13 +73,14 @@ input {
   margin: 10px 0 0;
 }
 
-.content-box-wrapper {
+.content-box {
   border: 2px solid #fff;
   box-sizing: border-box;
   padding: 20px;
+  margin: 50px 0 0;
 }
 
-.content-box {
+.content-box-inner {
   background-color: rgba(0, 0, 0, 0.8);
   box-sizing: border-box;
   padding: 50px;
@@ -80,7 +89,6 @@ input {
 .content-box-text {
   font-size: 24px;
   line-height: 36px;
-  /* max-width: 70%; */
 }
 
 .buttons-container {
@@ -170,10 +178,6 @@ input {
   margin: 20px 0 0;
 }
 
-.banner .button {
-  margin: 50px 0 0;
-}
-
 /*===============/BANNER/===============*/
 /*===============ABOUT US===============*/
 
@@ -186,8 +190,7 @@ input {
   padding: 150px 0 200px;
 }
 
-.about-us .content-box-wrapper,
-.about-us .content-box-wrapper .buttons-container {
+.about-us .content-box .buttons-container {
   margin: 50px 0 0;
 }
 
@@ -200,6 +203,10 @@ input {
 
 .prices .section-title {
   margin: 0 0 0 auto;
+}
+
+.prices .section-subtitle {
+  text-align: right;
 }
 
 .prices .section-title:after {
@@ -231,11 +238,131 @@ input {
   margin: 20px 0 0;
 }
 
+/*===============FAQ===============*/
+
+.faq {
+  box-sizing: border-box;
+  padding: 100px 0;
+}
+
+.question-block {
+  box-sizing: border-box;
+  padding: 20px 10px;
+  border: 2px solid #333;
+  margin: 0 0 20px;
+}
+
+.question-block:last-child {
+  margin: 0;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+}
+
+.question-button {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0 20px 0 0;
+  cursor: pointer;
+}
+
+.question p {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.answer {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  line-height: 24px;
+  margin: 0 0 0 30px;
+  transition: opacity 600ms, max-height 800ms;
+}
+
+.answer::before {
+  content: '';
+  display: block;
+  margin: 0 0 20px;
+}
+
+.active-answer {
+  max-height: 1000px;
+  opacity: 1;
+}
+
+/*===============/FAQ/===============*/
+/*===============CONTACT===============*/
+
+.contact {
+  background:
+    linear-gradient(black, transparent),
+    linear-gradient(0deg, black, transparent),
+    url('../img/backgrounds/background.jpg') no-repeat 0 / cover ;
+  box-sizing: border-box;
+  padding: 100px 0;
+}
+
+.contact-form {
+  margin: 50px 0 0;
+}
+
+.contact-form-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 20px;
+}
+
+.contact-form-section:last-child {
+  margin: 0;
+}
+
+.contact-form-parameter {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+.contact-form-parameter label {
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.contact-form-parameter input {
+  height: 50px;
+  border: 2px solid #333;
+  background-color: transparent;
+  font-size: 20px;
+  color: #FFF;
+  box-sizing: border-box;
+  padding: 0 0 0 10px;
+  outline: none;
+}
+
+.contact-form-submit-button {
+  height: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  box-sizing: border-box;
+  padding: 0 60px;
+  margin: 20px 0 0;
+  transition: transform 400ms;
+}
+
+.contact-form-submit-button:hover {
+  transform: scale(1.05);
+}
+
+/*===============/CONTACT/===============*/
 /*===============FOOTER===============*/
 
 .footer {
-  height: 200px;
   background-color: #333;
+  box-sizing: border-box;
+  padding: 50px 0;
 }
 
 /*===============/FOOTER/===============*/
