@@ -9,6 +9,21 @@ questionButtons.forEach((item) => {
   }
 });
 
+let headerLinks = document.querySelectorAll('.header-nav-item');
+let sections = document.querySelectorAll('section');
+
+headerLinks.forEach((item, index) => {
+  item.onclick = function () {
+    if (index === 0) {
+      alert('This is main')
+    } else {
+      event.preventDefault();
+      Array.from(sections)[index];
+    }
+  }
+});
+
+
 // jQuery
 $('.prices-slider').slick({
   slidesToShow: 3,
@@ -16,4 +31,8 @@ $('.prices-slider').slick({
   centerMode: true,
   centerPadding: '0',
   initialSlide: 1,
+})
+
+$('.prices-slider').on('afterChange', function (event, slick, currentSlide) {
+  $('.current-slide-number').text(currentSlide + 1);
 })

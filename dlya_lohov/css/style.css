@@ -107,7 +107,11 @@ input {
 /*===============HEADER===============*/
 
 .header {
+  position: fixed;
   background-color: #333;
+  right: 0;
+  left: 0;
+  z-index: 99;
 }
 
 .header .container {
@@ -139,10 +143,10 @@ input {
 
 .banner {
   background:
-    radial-gradient(1100px 1000px at 30% 200px, transparent 10%, #000 55%),
-    url('../img/backgrounds/banner-background.jpg') no-repeat top left / auto 90%;
+    radial-gradient(1100px 700px at 30% 400px, transparent 10%, #000 55%),
+    url('../img/backgrounds/banner-background.jpg') no-repeat center left / auto 90%;
   box-sizing: border-box;
-  padding: 100px 0;
+  padding: 150px 0;
 }
 
 .banner .container {
@@ -225,8 +229,57 @@ input {
   margin: 30px 0;
 }
 
+.slick-slide {
+  outline: none;
+}
+
 .prices-slider .slick-track {
   padding: 12px 0;
+}
+
+.slick-prev, .slick-next {
+  display: flex;
+  width: 70px;
+  height: 70px;
+  background-color: #000;
+  border-radius: 50%;
+  border: 2px solid #FFF;
+  z-index: 1;
+}
+
+.slick-prev:hover, .slick-prev:focus,
+.slick-next:hover, .slick-next:focus {
+  background-color: #000;
+}
+
+.slick-prev {
+  left: -76.5px;
+}
+
+.slick-next {
+  right: -76.5px;
+}
+
+.slick-prev:before, .slick-next:before {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: yellow;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60% auto;
+  border-radius: inherit;
+  opacity: 1;
+  margin: auto;
+}
+
+.slick-prev:before {
+  background-image: url('../img/controls/prev-arrow.svg');
+}
+
+.slick-next:before {
+  background-image: url('../img/controls/next-arrow.svg');
 }
 
 .prices-slide {
@@ -291,6 +344,44 @@ input {
 
 .prices-slide .button {
   margin: 30px 0 0;
+}
+
+.prices .content-box {
+  position: relative;
+}
+
+.slider-counter {
+  position: absolute;
+  width: 150px;
+  padding: 10px;
+  background-color: #000;
+  border: 2px solid #FFF;
+  left: 0;
+  right: 0;
+  margin: -15px auto 0;
+}
+
+.slider-counter-inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  border: 2px solid #333;
+}
+
+.slider-counter-line {
+  position: absolute;
+  width: 2px;
+  height: 30px;
+  background-color: yellow;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.slider-counter span {
+  font-size: 40px;
 }
 
 /*===============/PRICES/===============*/
