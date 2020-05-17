@@ -14,24 +14,24 @@ questionButtons.forEach((item) => {
 let headerLinks = document.querySelectorAll('.header-nav-item');
 let sections = document.querySelectorAll('section');
 
-function getCoords(elem) {
-  let box = elem.getBoundingClientRect();
+// function getCoords(elem) {
+//   let box = elem.getBoundingClientRect();
+//
+//   return {
+//     top: box.top + pageYOffset,
+//     left: box.left + pageXOffset
+//   };
+// }
 
-  return {
-    top: box.top + pageYOffset,
-    left: box.left + pageXOffset
-  };
-}
-
-headerLinks.forEach((item, index) => {
-  item.onclick = function () {
-    let currentSection = Array.from(sections)[index];
-    let currentSectionCoords = getCoords(currentSection);
-
-    window.scrollTo(0, currentSectionCoords.top);
-    event.preventDefault();
-  }
-});
+// headerLinks.forEach((item, index) => {
+//   item.onclick = function () {
+//     let currentSection = Array.from(sections)[index];
+//     let currentSectionCoords = getCoords(currentSection);
+//
+//     window.scrollTo(0, currentSectionCoords.top);
+//     event.preventDefault();
+//   }
+// });
 
 
 // jQuery Slick JS
@@ -45,4 +45,18 @@ $('.prices-slider').slick({
 
 $('.prices-slider').on('afterChange', function (event, slick, currentSlide) {
   $('.current-slide-number').text(currentSlide + 1);
+})
+
+// Header scroll
+
+$('.header-nav-link').on('click', function () {
+  let sectionLink = $(this).attr('data-section');
+  let section = $(sectionLink);
+  let sectionCoords = section.offset().top;
+
+  $('html, body').animate({
+    scrollTop: sectionCoords
+  }, 500);
+
+  event.preventDefault();
 })
