@@ -1,5 +1,6 @@
 'use strict';
-// Native JavaScript
+
+/*=================Native JavaScript=================*/
 
 let questionButtons = document.querySelectorAll('.question-button');
 
@@ -14,27 +15,10 @@ questionButtons.forEach((item) => {
 let headerLinks = document.querySelectorAll('.header-nav-item');
 let sections = document.querySelectorAll('section');
 
-// function getCoords(elem) {
-//   let box = elem.getBoundingClientRect();
-//
-//   return {
-//     top: box.top + pageYOffset,
-//     left: box.left + pageXOffset
-//   };
-// }
+/*=================jQuery=================*/
 
-// headerLinks.forEach((item, index) => {
-//   item.onclick = function () {
-//     let currentSection = Array.from(sections)[index];
-//     let currentSectionCoords = getCoords(currentSection);
-//
-//     window.scrollTo(0, currentSectionCoords.top);
-//     event.preventDefault();
-//   }
-// });
+// Prices slider on Slick JS
 
-
-// jQuery Slick JS
 $('.prices-slider').slick({
   slidesToShow: 3,
   infinite: false,
@@ -43,9 +27,11 @@ $('.prices-slider').slick({
   initialSlide: 1,
 })
 
-$('.prices-slider').on('afterChange', function (event, slick, currentSlide) {
-  $('.current-slide-number').text(currentSlide + 1);
-})
+// Prices slider counter
+
+// $('.prices-slider').on('afterChange', function (event, slick, currentSlide) {
+//   $('.current-slide-number').text(currentSlide + 1);
+// })
 
 // Header scroll
 
