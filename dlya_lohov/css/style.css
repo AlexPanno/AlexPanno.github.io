@@ -187,9 +187,9 @@ input {
 
 .about-us {
   background:
-    linear-gradient(#000, transparent 55%),
-    linear-gradient(transparent 80%, #000),
-    url('../img/backgrounds/about-us-background.jpg') no-repeat;
+    linear-gradient(black 5%, transparent 20%),
+    linear-gradient(0deg, black 5%, transparent 20%),
+    url('../img/backgrounds/about-us-background.jpg') no-repeat center;
   box-sizing: border-box;
   padding: 150px 0 200px;
 }
@@ -198,7 +198,85 @@ input {
   margin: 50px 0 0;
 }
 
+.about-us .content-box .content-box-text {
+  white-space: pre-line;
+}
+
 /*===============/ABOUT US/===============*/
+/*===============OUR ADVANTAGES===============*/
+
+.our-advantages {
+  background:
+    linear-gradient(#000 5%, transparent 60%),
+    linear-gradient(0deg, #000 5%, transparent 60%),
+    url('../img/backgrounds/our-advantages-background.jpg') no-repeat center / cover;
+  box-sizing: border-box;
+  padding: 100px 0;
+}
+
+.our-advantages .content-box {
+  margin: 50px 0 0;
+}
+
+.advantage {
+  display: flex;
+  margin: 0 0 20px;
+}
+
+.advantage:last-child {
+  margin: 0;
+}
+
+.advantage-image {
+  display: flex;
+  min-width: 250px;
+  height: 250px;
+  border: 2px solid #FFF;
+  border-radius: 50%;
+}
+
+.advantage-image img  {
+  width: auto;
+  height: 60%;
+  margin: auto;
+}
+
+.advantage:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.advantage:nth-child(2n) .advantage-text {
+  text-align: right;
+}
+
+.advantage:nth-child(2n) .advantage-text p::after {
+  margin: 20px 0 0 auto;
+}
+
+.advantage-text {
+  box-sizing: border-box;
+  padding: 50px;
+}
+
+.advantage-text h6 {
+  font-size: 32px;
+}
+
+.advantage-text p {
+  font-size: 20px;
+  margin: 20px 0 0;
+}
+
+.advantage-text p::after {
+  content: '';
+  display: block;
+  width: 20%;
+  height: 2px;
+  background-color: yellow;
+  margin: 20px 0 0;
+}
+
+/*===============/OUR ADVANTAGES/===============*/
 /*===============PRICES===============*/
 
 .prices {
@@ -393,9 +471,10 @@ input {
 }
 
 .question-block {
-  box-sizing: border-box;
-  padding: 20px 10px;
+  font-size: 20px;
   border: 2px solid #333;
+  box-sizing: border-box;
+  padding: 20px;
   margin: 0 0 20px;
 }
 
@@ -406,33 +485,33 @@ input {
 .question {
   display: flex;
   align-items: center;
+  font-weight: 700;
 }
 
 .question-button {
-  font-size: 40px;
-  font-weight: 700;
-  margin: 0 20px 0 0;
+  width: 30px;
+  height: auto;
   cursor: pointer;
+  margin: 0 20px 0 0;
+  transition: transform 400ms ,width 400ms;
 }
 
-.question p {
-  font-size: 20px;
-  font-weight: 700;
+.active-question-button {
+  transform: rotate(45deg);
 }
 
 .answer {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
-  line-height: 24px;
-  margin: 0 0 0 30px;
+  padding: 0 50px 0;
   transition: opacity 600ms, max-height 800ms;
 }
 
-.answer::before {
-  content: '';
-  display: block;
-  margin: 0 0 20px;
+.answer p {
+  line-height: 28px;
+  font-weight: 300;
+  padding: 20px 0 10px;
 }
 
 .active-answer {
@@ -445,15 +524,15 @@ input {
 
 .contact {
   background:
-    linear-gradient(black, transparent),
-    linear-gradient(0deg, black, transparent),
+  linear-gradient(#000 5%, transparent 60%),
+  linear-gradient(0deg, #000 5%, transparent 60%),
     url('../img/backgrounds/background.jpg') no-repeat 0 / cover ;
   box-sizing: border-box;
   padding: 100px 0;
 }
 
 .contact-form {
-  margin: 50px 0 0;
+  /* margin: 50px 0 0; */
 }
 
 .contact-form-section {
@@ -477,7 +556,8 @@ input {
   margin: 20px 0;
 }
 
-.contact-form-parameter input {
+.contact-form-parameter input,
+.contact-form-parameter select {
   height: 50px;
   border: 2px solid #333;
   background-color: transparent;
@@ -486,6 +566,15 @@ input {
   box-sizing: border-box;
   padding: 0 0 0 10px;
   outline: none;
+}
+
+.contact-form-parameter select {
+  width: 100%;
+}
+
+.contact-form-select {
+  height: 50px;
+  border: 2px solid #333;
 }
 
 .contact-form-submit-button {
