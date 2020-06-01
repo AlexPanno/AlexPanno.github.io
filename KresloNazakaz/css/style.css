@@ -73,6 +73,19 @@ ul {
   height: 48px;
   border-radius: 50%;
   border: 1px solid #cd9b3e;
+  transition: background-color 400ms;
+}
+
+
+
+.circle-wrapper svg {
+  fill: #cd9b3e;
+  margin: auto;
+  transition: fill 400ms;
+}
+
+.circle-wrapper:hover svg {
+  fill: #fff;
 }
 
 .text-content {
@@ -142,6 +155,10 @@ ul {
   position: relative;
   display: flex;
   align-items: center;
+}
+
+.header .user .circle-wrapper:hover {
+  background-color: #cd9b3e;
 }
 
 .circle-menu {
@@ -224,10 +241,6 @@ ul {
 
 .header .circle-wrapper:last-child {
   margin: 0;
-}
-
-.user-function {
-  margin: auto;
 }
 
 .header .circle-wrapper:nth-child(2) .user-function {
@@ -780,8 +793,8 @@ ul {
   margin: 0 12px 0 0;
 }
 
-.social-icon {
-  margin: auto;
+.socials .circle-wrapper:hover {
+  background-color: #cd9b3e;
 }
 
 .socials .circle-wrapper:last-child {
@@ -1633,5 +1646,4 @@ ul {
   .master-cite {
     font-size: 16px;
   }
-
 }

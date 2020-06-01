@@ -1,20 +1,5 @@
 'use strict';
 
-/*=================Native JavaScript=================*/
-
-let questionButtons = document.querySelectorAll('.question-button');
-
-questionButtons.forEach((item) => {
-  item.onclick = function () {
-    let currentAnswer = this.parentElement.nextElementSibling;
-    currentAnswer.classList.toggle("active-answer");
-    this.classList.toggle("active-question-button");
-  }
-});
-
-let headerLinks = document.querySelectorAll('.header-nav-item');
-let sections = document.querySelectorAll('section');
-
 /*=================jQuery=================*/
 
 // Prices slider on Slick JS
@@ -29,9 +14,9 @@ $('.prices-slider').slick({
 
 // Prices slider counter
 
-// $('.prices-slider').on('afterChange', function (event, slick, currentSlide) {
-//   $('.current-slide-number').text(currentSlide + 1);
-// })
+$('.prices-slider').on('afterChange', function (event, slick, currentSlide) {
+  $('.current-slide-number').text(currentSlide + 1);
+})
 
 // Header scroll
 
@@ -46,3 +31,25 @@ $('.header-nav-link').on('click', function () {
 
   event.preventDefault();
 })
+
+/*=================Native JavaScript=================*/
+
+let nextSlideButton = document.querySelector('.slick-prev');
+let prevSlideButton = document.querySelector('.slick-next');
+
+function animateButton() {
+
+}
+
+prevSlideButton.addEventListener('click', animateButton);
+nextSlideButton.addEventListener('click', animateButton);
+
+let questionButtons = document.querySelectorAll('.question-button');
+
+questionButtons.forEach((item) => {
+  item.onclick = function () {
+    let currentAnswer = this.parentElement.nextElementSibling;
+    currentAnswer.classList.toggle("active-answer");
+    this.classList.toggle("active-question-button");
+  }
+});
