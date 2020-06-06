@@ -1,0 +1,174 @@
+@media screen and (max-width: 1600px) {
+  html {
+    font-size: 0.0625vw;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  html {
+    font-size: 0.85375px;
+  }
+
+  .container {
+    width: 73.75%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header-nav {
+    position: fixed;
+    width: 100%;
+    background-color: #373B42;
+    top: 60rem;
+    left: 0;
+    z-index: 99;
+  }
+
+  .nav-ul {
+    align-items: center;
+    justify-content: space-evenly;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: height 400ms, opacity 400ms;
+  }
+
+  .active-nav-ul {
+    height: 60rem;
+    opacity: 1;
+  }
+
+  .nav-link {
+    margin: 0;
+  }
+
+  .touch-menu {
+    display: flex;
+  }
+
+  .company-logo {
+    width: 190rem;
+    height: 190rem
+  }
+
+  .advantage,
+  .advantage:nth-child(even) {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 50rem;
+  }
+
+  .advantage:last-child {
+    margin: 0;
+  }
+
+  .advantage-description {
+    text-align: center;
+    padding: 0;
+    margin: 50rem 0 0;
+  }
+
+  .advantage-description p::after,
+  .advantage:nth-child(2n) .advantage-description p::after {
+    margin: 20rem auto 0;
+  }
+
+  .contact-form-section {
+    flex-direction: column;
+  }
+
+  .contact-form-parameter {
+    width: 100%;
+    margin: 0 0 40rem;
+  }
+
+  .contact-form-parameter:last-child {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 0.11vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 0.66px;
+  }
+
+  section:nth-child(odd) .section-title,
+  section:nth-child(odd) .section-subtitle,
+  .section-title,
+  .section-subtitle {
+    align-self: center;
+    text-align: center;
+  }
+
+  section:nth-child(odd) .section-title::after,
+  .section-title::after {
+    margin: 10rem auto 0;
+  }
+
+  .content-box-paragraph {
+    font-size: 20rem;
+    line-height: 30rem;
+  }
+
+  .banner {
+    background:
+      linear-gradient(#000, transparent 90%),
+      linear-gradient(0deg, #000, transparent 90%),
+      url('../img/backgrounds/banner-background.jpg') center / cover;
+  }
+
+  .banner .container {
+    align-items: center;
+    text-align: center;
+  }
+
+  .banner p {
+    max-width: 70%;
+  }
+
+  .contact-form-parameter label {
+    margin: 0 auto 20rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .button {
+    margin: 50rem auto 0;
+  }
+
+  .content-box-inner {
+    padding: 25rem;
+  }
+
+  .content-box-paragraph {
+    text-align: center;
+  }
+
+  .nav-ul {
+    flex-direction: column;
+    max-height: 0;
+    height: auto;
+    transition: padding 400, max-height 400ms, opacity 400ms;
+  }
+
+  .active-nav-ul {
+    height: auto;
+    max-height: 1000px;
+    padding: 30rem 0;
+  }
+
+  .nav-link {
+    font-size: 20rem;
+    margin: 0 0 20rem;
+  }
+
+  .nav-link:last-child {
+    margin: 0;
+  }
+}
