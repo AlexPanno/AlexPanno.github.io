@@ -98,6 +98,10 @@
     font-size: 0.66px;
   }
 
+  .container {
+    width: 90%;
+  }
+
   section:nth-child(odd) .section-title,
   section:nth-child(odd) .section-subtitle,
   .section-title,
