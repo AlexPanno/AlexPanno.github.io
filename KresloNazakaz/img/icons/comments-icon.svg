@@ -1,16 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 14" width="15" height="14">
-	<defs>
-		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
-			<path d="M-778 -3062L1142 -3062L1142 731L-778 731Z" />
-		</clipPath>
-	</defs>
-	<style>
-		tspan { white-space:pre }
-		.shp0 { fill: none;stroke: #cd9b3e } 
-	</style>
-	<g id="Креслоназаказ_Стартовая_v1.0" clip-path="url(#cp1)">
-		<g id="Blog">
-			<path id="icon" class="shp0" d="M2 2L14 2L14 9L14 10L14 13L11 10L2 10L2 2Z" />
-		</g>
-	</g>
+<svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #cd9b3e;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="icon" class="cls-1" d="M1501,3395h12v11l-3-3h-9v-8Z" transform="translate(-1500.5 -3394.5)"/>
 </svg>

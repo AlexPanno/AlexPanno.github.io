@@ -1,0 +1,389 @@
+@media screen and (max-width: 1600px) {
+  html {
+    font-size: 0.0625vw;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  html {
+    font-size: 0.85375px;
+  }
+
+  .container {
+    width: 89.375%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .icon-circle.touch-menu {
+    display: flex;
+  }
+
+  .header-nav {
+    position: fixed;
+    background-color: #FFF;
+    height: 100vh;
+    padding: 150rem 85rem;
+    z-index: 10;
+    top: 0;
+    left: -300rem;
+  }
+
+  .header-nav .nav-ul {
+    flex-direction: column;
+  }
+
+  .header-nav .nav-link {
+    margin: 0 0 35rem;
+  }
+
+  .our-products .container {
+    flex-direction: column;
+  }
+
+  .our-products .section-text-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .our-products .section-text-content p {
+    max-width: 500rem;
+    white-space: normal;
+    margin: 0;
+  }
+
+  .our-products .section-text-content .button {
+    margin: 0;
+  }
+
+  .our-products .section-title {
+    width: 100%;
+    white-space: normal;
+    margin: 0 0 30rem;
+  }
+
+  .our-products .section-title.underlined-title::after {
+    margin: 30rem auto 0;
+  }
+
+  .products-list {
+    justify-content: space-evenly;
+    padding: 30rem 0 0;
+  }
+
+  .advantage {
+    padding: 120rem 18%;
+  }
+
+  .buttons-wrapper {
+    flex-direction: column;
+  }
+
+  .buttons-wrapper .link {
+    margin: 20rem auto 0;
+  }
+
+  .blog-post {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .blog-post img {
+    width: auto;
+    height: 250rem;
+    margin: 0 auto;
+  }
+
+  .blog-post-content {
+    align-items: center;
+    padding: 0;
+    margin: 20rem 0 0;
+  }
+
+  .blog-post-content .link {
+    margin: 20rem 0 0;
+  }
+
+  .footer-nav {
+    justify-content: space-between;
+  }
+
+  .footer-nav-section,
+  .footer-nav-section:last-child {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    padding: 30rem 0;
+  }
+
+  .delivery {
+    display: none;
+  }
+
+  .banner {
+    padding: 100rem 0;
+  }
+
+  .banner .container {
+    flex-direction: column;
+  }
+
+  .banner .section-text-content {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .banner .section-title.underlined-title::after {
+    margin: 30rem auto 0;
+  }
+
+  .banner .circle-wrapper {
+    position: relative;
+    margin: 50rem 0;
+  }
+
+  .header-options {
+    margin: 0 0 0 auto;
+  }
+
+  .master {
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .master-blockquote-block {
+    max-width: 300rem;
+    padding: 0;
+    margin: 0;
+    margin: 20rem 0 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .products-list {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .our-products .section-text-content p {
+    max-width: 50%;
+  }
+
+  .product,
+  .product:last-child {
+    margin: 10rem;
+  }
+
+  .our-masters {
+    flex-direction: column;
+  }
+
+  .master {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .master-blockquote-block {
+    max-width: 200rem;
+    padding: 50rem 0 0;
+    margin: 0 0 0 25rem;
+  }
+
+  .our-masters .advantage-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 30rem 0 0;
+  }
+
+  .our-masters .advantage-title {
+    width: 100%;
+    max-width: none;
+    white-space: normal;
+    margin: 0 0 30rem;
+  }
+
+  .our-masters .advantage-title.underlined-title::after {
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 30rem auto 0;
+  }
+
+  .our-masters .advantage-description p,
+  .our-masters .buttons-wrapper {
+    margin: 0;
+  }
+
+  .our-masters .advantage-description p {
+    white-space: normal;
+    max-width: 50%;
+  }
+
+  .footer-nav {
+    flex-wrap: wrap;
+  }
+
+  .footer-nav-section {
+    text-align: center;
+    width: 33%;
+  }
+
+  .footer-nav-section:last-child {
+    width: auto;
+    margin: 50rem auto 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-options {
+    display: none;
+  }
+
+  .advantage-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .advantage-title.underlined-title::after {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 30rem auto 0;
+  }
+
+  .advantage-title {
+    max-width: none;
+  }
+
+  .our-masters .advantage-description p {
+    max-width: none;
+  }
+
+  .buttons-wrapper,
+  .our-masters .buttons-wrapper {
+    margin: 30rem 0 0;
+  }
+
+  .blog-post img {
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .banner {
+    padding: 75rem 0;
+  }
+
+  .our-products .section-text-content,
+  .master {
+    flex-direction: column;
+  }
+
+  .our-products .section-text-content .button {
+    margin: 30rem 0 0;
+  }
+
+  .master-blockquote-block {
+    text-align: center;
+    padding: 30rem 0 0;
+    margin: 0;
+  }
+
+  .blog-posts-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog-post {
+    width: auto;
+    margin: 0 0 50rem;
+  }
+
+  .blog-post:last-child {
+    margin: 0;
+  }
+
+  .blog-post img {
+    width: 300px;
+  }
+
+  .footer-nav-section {
+    width: 50%;
+    margin: 0 0 40rem;
+  }
+
+  .footer-nav-section:last-child {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section-title {
+    font-size: 32rem;
+    line-height: 42rem;
+  }
+
+  .logo img {
+    width: 35rem;
+  }
+
+  .logo p {
+    font-size: 13rem;
+    line-height: 21rem;
+    margin: 10rem 0 0;
+  }
+
+  .banner .circle-wrapper {
+    width: 38vw;
+    height: 38vw;
+  }
+
+  .our-products .section-text-content p {
+    max-width: none;
+  }
+
+  .master {
+    align-items: center;
+  }
+
+  .advantage {
+    padding: 120rem 30rem;
+  }
+
+  .master-blockquote-block {
+    max-width: none;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-nav-section:first-child {
+    margin: 0 0 40rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .blog-post img {
+    width: 95%;
+  }
+}

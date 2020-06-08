@@ -1,0 +1,112 @@
+.container {
+  width: 1430rem;
+  margin: 0 auto;
+}
+
+.primary-color {
+  color: #cd9b3e;
+}
+
+.nav-ul {
+  display: flex;
+}
+
+.nav-link:last-child {
+  margin: 0;
+}
+
+.nav-link a:hover {
+  color: #cd9b3e;
+}
+
+.icon-circle {
+  display: flex;
+  width: 48rem;
+  height: 48rem;
+  border: 1px solid #cd9b3e;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 400ms;
+}
+
+.icon-circle:hover {
+  background-color: #cd9b3e;
+}
+
+.icon-circle:last-child {
+  margin: 0;
+}
+
+.icon-circle svg {
+  fill: #cd9b3e;
+  margin: auto;
+  transition: fill 400ms;
+}
+
+.icon-circle:hover svg {
+  fill: #fff;
+}
+
+.circle-wrapper {
+  display: flex;
+  width: 216rem;
+  height: 216rem;
+  border-radius: 50%;
+  border: 1px solid #cd9b3e;
+}
+
+.circle-wrapper-inner {
+  display: flex;
+  width: 77.8%;
+  height: 77.8%;
+  border-radius: 50%;
+  border: 1px solid #cd9b3e;
+  margin: auto;
+}
+
+.circle-wrapper-inner img {
+  margin: auto;
+}
+
+.section-title {
+  font-size: 40rem;
+  line-height: 48rem;
+  text-align: center;
+}
+
+.underlined-title {
+  text-align: inherit;
+  white-space: pre-line;
+}
+
+.underlined-title::after {
+  content: '';
+  display: block;
+  width: 70rem;
+  height: 1px;
+  background-color: #cd9b3e;
+  margin: 30rem 0 0;
+}
+
+.link {
+  display: block;
+}
+
+.link:hover {
+  color: #cd9b3e;
+}
+
+.button {
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  padding: 16rem 60rem;
+  border: 1px solid #cd9b3e;
+  color: #2a2928;
+  transition: background-color 400ms, color 400ms;
+}
+
+.button:hover {
+  background-color: #cd9b3e;
+  color: #FFF;
+}
