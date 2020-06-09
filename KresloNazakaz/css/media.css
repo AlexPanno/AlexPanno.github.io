@@ -26,7 +26,13 @@
     padding: 150rem 85rem;
     z-index: 10;
     top: 0;
+    left: 0;
     left: -300rem;
+    transition: left 400ms;
+  }
+
+  .active-header-nav {
+    left: 0;
   }
 
   .header-nav .nav-ul {
@@ -336,6 +342,22 @@
 }
 
 @media screen and (max-width: 480px) {
+  .header-nav {
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: -100%;
+    transition: top 400ms;
+  }
+
+  .header-nav .nav-ul {
+    align-items: center;
+  }
+
+  .active-header-nav {
+    top: 0;
+  }
+
   .section-title {
     font-size: 32rem;
     line-height: 42rem;
