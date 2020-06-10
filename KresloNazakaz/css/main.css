@@ -118,6 +118,10 @@ ul {
   margin: 0 12rem 0 0;
 }
 
+.header-options .icon-circle:nth-child(2) {
+  background: url('../img/icons/icon-hover.svg') no-repeat 0 / 100% 100%;
+}
+
 .header-options .icon-circle svg {
   width: auto;
   height: 40%;
@@ -128,7 +132,7 @@ ul {
 
 .banner {
   position: relative;
-  background: url('../img/backgrounds/banner-background.png') no-repeat;
+  background: url('../img/backgrounds/banner-background.png') no-repeat center / cover;
   padding: 230rem 0;
 }
 
@@ -145,6 +149,10 @@ ul {
   margin: 0 auto;
 }
 
+.banner .circle-wrapper-inner {
+  border-color: rgba(205, 155, 62, 0.3);
+}
+
 .banner .circle-wrapper-inner img {
   transition: transform 400ms;
 }
@@ -159,6 +167,10 @@ ul {
 
 .banner .section-title {
   color: #fff;
+}
+
+.banner .section-title .italic-style {
+  color: #a8a492;
 }
 
 .banner .section-title.underlined-title::after {
@@ -210,6 +222,7 @@ ul {
   position: relative;
   display: flex;
   flex-direction: column;
+  align-self: center;
   width: 350rem;
   height: 545rem;
   background-color: #f6f2f3;
@@ -217,11 +230,22 @@ ul {
   color: #2a2928;
   padding: 35rem 30rem 30rem;
   margin: 0 12rem 0 0;
-  transition: padding 400ms;
+  transition: width 400ms, height 400ms, padding 400ms, margin 400ms;
 }
 
 .product:last-child {
   margin: 0;
+}
+
+.product:last-child:hover {
+  margin: 0 7.5rem;
+}
+
+.product:hover {
+  width: 335rem;
+  height: 535rem;
+  padding: 30rem 22.5rem 25rem;
+  margin: 0 19.5rem 0 0;
 }
 
 .product:nth-child(1) {
@@ -239,6 +263,7 @@ ul {
 }
 
 .product:nth-child(3) .product-seller-proffesion,
+.product:nth-child(3) .product-seller-name,
 .product:nth-child(3) .product-price {
   color: #f6f2f3;
 }
@@ -298,6 +323,11 @@ ul {
   overflow: hidden;
 }
 
+.product-seller-photo img {
+  width: 100%;
+  height: auto;
+}
+
 .product-seller-info {
   padding: 0 0 0 15rem;
 }
@@ -305,6 +335,14 @@ ul {
 .product-seller-name {
   font-size: 18rem;
   font-weight: 500;
+  letter-spacing: 0px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.product:nth-child(3) .product-seller-name:hover,
+.product-seller-name:hover {
+  color: #cd9b3e;
 }
 
 .product-seller-proffesion {
@@ -323,6 +361,8 @@ ul {
 }
 
 .product-price svg {
+  width: 12rem;
+  height: 13rem;
   fill: #45433c;
   margin: 5rem 0 0 8rem;
 }
@@ -378,6 +418,12 @@ ul {
   border: none;
 }
 
+.master .circle-wrapper-inner img {
+  width: auto;
+  height: 120%;
+  margin: 0 0 0 -5%
+}
+
 .master-blockquote-block {
   max-width: 200rem;
   padding: 50rem 0 0;
@@ -386,6 +432,10 @@ ul {
 
 .master-blockquote-block blockquote {
   font-size: 18rem;
+}
+
+.master-blockquote-block .bold-text {
+  color: #FFF;
 }
 
 .master-blockquote-block cite {
@@ -450,7 +500,7 @@ ul {
 }
 
 .our-design {
-  background: url('../img/backgrounds/our-design-background.png') no-repeat 92.5% bottom / auto #f6f2f3;
+  background: url('../img/backgrounds/our-design-background.png') no-repeat 92.5% bottom / auto 90%  #f6f2f3;
 }
 
 /*===============/OUR ADVANTAGES/===============*/

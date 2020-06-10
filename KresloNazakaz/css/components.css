@@ -7,6 +7,15 @@
   color: #cd9b3e;
 }
 
+.bold-text {
+  font-weight: 700;
+}
+
+.italic-style {
+  font-style: italic;
+  font-weight: 400;
+}
+
 .nav-ul {
   display: flex;
 }

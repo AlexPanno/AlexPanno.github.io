@@ -171,6 +171,13 @@
     margin: 0;
     margin: 20rem 0 0;
   }
+
+  .our-design {
+    background:
+      linear-gradient(#f6f2f3 0%, transparent 100%),
+      linear-gradient(0deg ,#f6f2f3 0%, transparent 100%),
+      url('../img/backgrounds/our-design-background.png') no-repeat 92.5% bottom / auto 90% #f6f2f3;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -186,6 +193,11 @@
   .product,
   .product:last-child {
     margin: 10rem;
+  }
+
+  .product:hover ,
+  .product:last-child:hover {
+    margin: 15rem 17.5rem;
   }
 
   .our-masters {

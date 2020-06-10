@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 19" width="22" height="19">
-	<defs>
-		<image width="22" height="19" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAATCAMAAACjpw26AAAAAXNSR0IB2cksfwAAAP9QTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+7XQ/AAAAFV0Uk5TAEUgAhvarRVd5/793DwMpvX/+IAIRPz6xSkElvHyZj/V9hqH8+ROts/X7OnO7XQsUhNGOBRZI1DEUzktF1YiAQMFs1oLBgeuabFqEWW75fvisEnTK0q7RW8AAAC9SURBVHicpc9HEoIADEDRoGIBW7B37IpdQcGGvXe9/1lEh2FQ3PlXmbdJAqBFmMxgzEJabUa1Oyja6fpCt8eLiBTj8+s1QAbxXSgc0TAai1OoRieS6uIUy6CutDXz0mwOP6PzBYAilhDLyFVeUkVkscZRdWg0W+0OL3QzPdEn2Yg+Lw2GozHIUZjIMFUWz+YLdZzKuitnwvLH8wqv/ud1wWiW3obc7oj9Bx6O5RN3ZrgLe71p6LrrXxcfCj0B5McZDeaNh8AAAAAASUVORK5CYII="/>
-	</defs>
-	<style>
-		tspan { white-space:pre }
-	</style>
-	<use id="Background" href="#img1" x="0" y="0" />
-</svg>

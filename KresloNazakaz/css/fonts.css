@@ -50,3 +50,10 @@
   font-style: normal;
   font-weight: 900;
 }
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/Playfair Display/PlayfairDisplay-Italic.ttf');
+  font-style: italic;
+  font-weight: 400;
+}
