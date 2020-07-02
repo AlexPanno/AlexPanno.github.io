@@ -46,6 +46,11 @@
     left: 0;
     right: 0;
     margin: 0 0 0 -260rem;
+    transition: margin 400ms;
+  }
+
+  .active-header {
+    margin: 0;
   }
 
   .bottom-header-part .container {
