@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 19" width="19" height="19">
+	<defs>
+		<image width="19" height="19" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAMAAABFjsb+AAAAAXNSR0IB2cksfwAAALpQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8hwkwQAAAD50Uk5TAGn/BTyjOwRx6eYCEsDzmVxEtQrEFxaxtwF0tAMNZvJr3ZqbOaFa5VdGCwygWTU63uOzbLC6sufcYj6lojdQlGH9AAAAw0lEQVR4nF1QCRKCMBBbooiCyqEiChZE8QDv+/z/tyxFHDAzbXcyu80mRF9IkKiMSlWGXFMKjFJvIIUqaTnVbKGtG6aht2F1vnNdWD1R2X04A1EN4Xr8GfHjuWAp5am+TRSoUAPe6Y/TxhpCTgkNTk4wJWIRZkTzTJdogYgRL5cUI0NCJr+JrbD+76NN6b8QW64x2JV098IKw6Gw31HsrDlw7czHCWcvMxe7P7+XJA9Bk65C43b/5ZKm9Xji9S4yfzl/ADRmDi0u+BfkAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Слой 1" href="#img1" x="0" y="0" />
+</svg>

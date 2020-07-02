@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/Open Sans/OpenSans-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/Open Sans/OpenSans-Italic.ttf');
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/Open Sans/OpenSans-Bold.ttf');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/Open Sans/OpenSans-SemiBold.ttf');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/Open Sans/OpenSans-Light.ttf');
+  font-style: normal;
+  font-weight: 300;
+}
+
+/* Indian Rupee */
+
+@font-face {
+  font-family: 'Indian Rupee';
+  src: url('../fonts/Indian Rupee/IndianRupee.ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* Source Sans Pro */
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/Sourse Sans Pro/SourceSansPro-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* Avenir */
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/Avenir/Avenir.ttf');
+  font-style: normal;
+  font-weight: 400;
+}
