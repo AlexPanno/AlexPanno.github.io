@@ -95,6 +95,7 @@ a {
 .bottom-header-part {
   padding: 12rem 0;
   background-color: #FFF;
+  overflow: scroll;
 }
 
 .logo img {
