@@ -26,13 +26,6 @@
   font-weight: 600;
 }
 
-@font-face {
-  font-family: 'Open Sans';
-  src: url('../fonts/Open Sans/OpenSans-Light.ttf');
-  font-style: normal;
-  font-weight: 300;
-}
-
 /* Indian Rupee */
 
 @font-face {

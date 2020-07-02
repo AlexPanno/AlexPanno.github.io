@@ -28,14 +28,14 @@
               </svg>
               <p>Hello, {{ userName }}!</p>
             </div>
-            <div class="touch-menu">
+            <div class="touch-menu" v-on:click="toggleMenu">
               <div class="touch-menu-line"></div>
               <div class="touch-menu-line"></div>
               <div class="touch-menu-line"></div>
             </div>
           </div>
         </div>
-        <div class="bottom-header-part">
+        <div class="bottom-header-part" v-bind:class="{ 'active-header': activeHeader}">
           <div class="container">
             <div class="user">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 24" width="26" height="24">
@@ -128,6 +128,7 @@
           </div>
         </div>
       </footer>
+      <div class="dark-background" v-bind:class="{ 'active-dark-background': activeHeader }" v-on:click="toggleMenu"></div>
     </div>
     <script src="https://use.fontawesome.com/c4570747b5.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>

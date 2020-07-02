@@ -108,6 +108,7 @@ Vue.component('menu-list', {
 const vw = new Vue({
   el: '#app',
   data: {
+    activeHeader: false,
     userName: 'Amit',
     selects: [
       {
@@ -269,13 +270,17 @@ const vw = new Vue({
         ]
       }
     ]
+  },
+  methods: {
+    toggleMenu: function () {
+      this.activeHeader = !this.activeHeader;
+    },
+    closeMenu: function () {
+      if (this.activeHeader) {
+        this.activeHeader = false;
+      }
+    }
   }
 });
 
-let touchMenu = document.querySelector('.touch-menu');
-
-function openMenu() {
-  alert('hi')
-}
-
-touchMenu.addEventListener('click', openMenu);
+window.addEventListener('scroll', vw.closeMenu);
