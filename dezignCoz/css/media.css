@@ -158,9 +158,9 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 660px) {
   html {
-    font-size: 0.78px
+    font-size: 0.86px
   }
 
   .menu-form {
@@ -177,10 +177,20 @@
   .custom-select {
     width: 480rem;
     margin: 0 0 20rem;
+    border-radius: 5rem;
+  }
+
+  .custom-select-header {
+    border: 0;
   }
 
   .custom-select:last-child {
     margin: 0;
+    border-radius: 5rem;
+  }
+
+  .custom-select:first-child {
+    border-radius: 5rem;
   }
 
   .custom-select-body {
@@ -212,11 +222,11 @@
 
   .banner-loaction-form,
   .custom-select  {
-    width: 85%;
+    width: 90%;
   }
 
   .line {
-    margin: 20rem 0;
+    margin: 10rem 0;
   }
 
   .footer .container {
