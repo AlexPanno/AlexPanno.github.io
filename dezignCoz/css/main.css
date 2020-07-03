@@ -354,9 +354,12 @@ a {
 }
 
 .footer-logo {
+  align-self: baseline;
+}
+
+.footer-logo img {
   width: auto;
   height: 41rem;
-  align-self: baseline;
 }
 
 .footer .container {

@@ -3,6 +3,7 @@
   <head>
     <!-- Meta Tags -->
     <meta charset="utf-8">
+    <meta name="area.size" content="width=1280px,height=2115px">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Fonts -->
     <link rel="stylesheet" href="css/fonts.css">
@@ -80,8 +81,8 @@
             <h2 class="banner-title">Homemade Food Just a Click Away</h2>
             <form class="banner-loaction-form" action="index.html" method="post">
               <div class="input-holder">
-                <input type="text" name="" value="" class="location-input" placeholder="Enter Street, City, Pincode">
-                <input type="submit" name="" value="" class="button">
+                <input type="text" name="location" value="" class="location-input" placeholder="Enter Street, City, Pincode">
+                <input type="submit" name="location-sumbit" value="" class="button">
               </div>
             </form>
             <p class="form-subtext">Enter your location to view menu</p>
@@ -91,9 +92,13 @@
           <div class="container">
             <form class="menu-form" action="index.html" method="post">
               <div class="custom-select-wrapper">
-                <custom-select v-bind:select="select" v-for="select in selects"></custom-select>
+                <custom-select
+                  v-bind:select="select"
+                  v-for="select in selects"
+                  v-bind:key="select.id">
+                </custom-select>
               </div>
-              <input type="submit" name="" value="Find Food" class="button">
+              <input type="submit" name="menu-form-submit" value="Find Food" class="button">
             </form>
             <menu-list v-bind:menu="menuLists.breakfast"></menu-list>
             <menu-list v-bind:menu="menuLists.treats"></menu-list>
@@ -112,14 +117,18 @@
               </div>
             </div>
             <nav class="company-nav">
-              <nav-section v-bind:nav="section" v-for="section in navSections"></nav-section>
+              <nav-section
+                v-bind:nav="section"
+                v-for="section in navSections"
+                v-bind:key="section.id">
+              </nav-section>
             </nav>
           </div>
         </section>
       </main>
       <footer class="footer">
         <div class="container">
-          <img src="img/content/Footer-Logo.svg" alt="logo" class="footer-logo">
+          <a href="#"><img src="img/content/Footer-Logo.svg" alt="logo" class="footer-logo"></a>
           <p>We're a UI+UX design studio that creates all things digital like mobile apps, websites, enterprise applications, marketing campaigns, software (and much more) with people across the world.</p>
           <div class="socials">
             <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>

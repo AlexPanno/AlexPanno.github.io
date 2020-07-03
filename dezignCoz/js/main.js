@@ -35,13 +35,16 @@ Vue.component('custom-select', {
         <p class="custom-select-category">{{ select.name }}</p>
         <div class="custom-select-current">
           <img src="img/icons/Form-search.svg" alt="search" class="custom-select-search-icon" v-if="searchType">
-          <input v-if="searchType" v-model="current" type="search" name="" class="custom-select-search">
+          <input v-if="searchType" v-model="current" type="search" name="search-input" class="custom-select-search">
           <span v-if="!searchType">{{ current }}</span>
           <img src="img/contols/Options_icon.svg" alt="select arrow" class="custom-select-arrow" v-on:click="toggleSelect">
         </div>
       </div>
       <div class="custom-select-body">
-        <div class="custom-select-item" v-for="value in select.items" v-on:click="setCurrent">
+        <div
+          class="custom-select-item"
+          v-for="value in select.items"
+          v-on:click="setCurrent">
           {{ value }}
         </div>
       </div>
@@ -73,7 +76,9 @@ Vue.component('product', {
             <a href="#" class="product-seller-name link">{{ product.seller.name }}</a>
           </div>
           <div class="product-categories">
-            <img v-for="category in product.categories" v-bind:src="category" alt="product category">
+            <img v-for="category in product.categories"
+              v-bind:src="category"
+              alt="product category">
           </div>
         </div>
       </div>
@@ -98,7 +103,8 @@ Vue.component('menu-list', {
     <div class="products-list">
       <product
         v-for="product in menu.products"
-        v-bind:product="product">
+        v-bind:product="product"
+        v-bind:key="product.id">
       </product>
     </div>
   </div>
@@ -114,6 +120,7 @@ const vw = new Vue({
       {
         name: 'Meal Type',
         current: 'Value',
+        id: 1,
         items: [
           'Lunch',
           'Value 2',
@@ -124,6 +131,7 @@ const vw = new Vue({
         name: 'Select Dish/Cuisine',
         current: 'Value',
         search: true,
+        id: 2,
         items: [
           'Chinese',
           'Value 2',
@@ -134,6 +142,7 @@ const vw = new Vue({
       {
         name: 'Food Type',
         current: 'Value',
+        id: 3,
         items: [
           'Non-veg',
           'Value 2',
@@ -149,6 +158,7 @@ const vw = new Vue({
             image: "img/content/Product-1.png",
             name: 'Gajar ka Halwa with Crackling Dry Fruits',
             price: '` 60.00',
+            id: 1,
             categories: [
               'img/content/product category.svg',
             ],
@@ -161,6 +171,7 @@ const vw = new Vue({
             image: "img/content/Product-2.png",
             name: 'Punjabi Dhaba Style Chicken Curry with Rice',
             price: '` 80.00',
+            id: 2,
             categories: [
               'img/content/product category 2.svg'
             ],
@@ -173,6 +184,7 @@ const vw = new Vue({
             image: "img/content/Product-3.png",
             name: 'Veg. Laziz with 4 Parathas',
             price: '` 50.00',
+            id: 3,
             categories: [
               'img/content/product category 2.svg'
             ],
@@ -185,6 +197,7 @@ const vw = new Vue({
             image: "img/content/Product-4.png",
             name: 'Paneer Hariyali Tikka with Green Chutney',
             price: '` 175.00',
+            id: 4,
             categories: [
               'img/content/product category 3.svg',
               'img/content/product category.svg',
@@ -204,6 +217,7 @@ const vw = new Vue({
             image: "img/content/Product-5.png",
             name: 'Gajar ka Halwa with Crackling Dry Fruits',
             price: '` 60.00',
+            id: 1,
             categories: [
               'img/content/product category.svg'
             ],
@@ -216,6 +230,7 @@ const vw = new Vue({
             image: "img/content/Product-6.png",
             name: 'Chocolate Mousse',
             price: '` 80.00',
+            id: 2,
             categories: [
               'img/content/product category 2.svg'
             ],
@@ -228,6 +243,7 @@ const vw = new Vue({
             image: "img/content/Product-7.png",
             name: 'Cottage Cheese Quiche with Garlic and Cheese',
             price: '` 50.00',
+            id: 3,
             categories: [
               'img/content/product category 2.svg'
             ],
@@ -240,6 +256,7 @@ const vw = new Vue({
             image: "img/content/Product-8.png",
             name: 'Aloo Tikki (4) with Chole, Sweet Imli Chutney and...',
             price: '` 175.00',
+            id: 4,
             categories: [
               'img/content/product category 3.svg',
               'img/content/product category.svg',
@@ -255,6 +272,7 @@ const vw = new Vue({
     navSections: [
       {
         title: 'Company',
+        id: 1,
         links: [
           'About Us',
           'Partner with us',
@@ -263,6 +281,7 @@ const vw = new Vue({
       },
       {
         title: 'Support',
+        id: 2,
         links: [
           'Contact',
           'Forums',
