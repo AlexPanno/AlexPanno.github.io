@@ -151,13 +151,16 @@ input, button {
 }
 
 .brands-slider {
-  display: flex;
-  justify-content: space-between;
   margin: 100px 0 0;
 }
 
 .brands .slider-nav {
   margin: 25px 0 0 auto;
+}
+
+.brands-slider img {
+  width: 100%;
+  height: auto;
 }
 
 /* ===== /Footer/ ===== */
@@ -175,9 +178,9 @@ input, button {
 }
 
 .footer h4 {
+  font-size: 25rem;
+  line-height: 32rem;
   font-weight: 600;
-  font-size: 25px;
-  line-height: 32px;
   color: #fff;
 }
 
@@ -188,8 +191,8 @@ input, button {
 }
 
 .footer-nav .nav-link {
+  font-size: 20rem;
   font-weight: 300;
-  font-size: 20px;
   color: #FFFFFF;
   margin: 0 0 2px;
 }
@@ -205,7 +208,7 @@ input, button {
 .newsletter-form input {
   width: 100%;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 20rem;
   color: #fff;
   padding-bottom: 10px;
   border-bottom: 1px solid #fff;
@@ -217,14 +220,19 @@ input, button {
 
 .newsletter-form button {
   width: 100%;
+  max-width: 260px;
   height: 75px;
   border: none;
   background-color: #C0B19A;
   font-weight: 450;
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 20rem;
+  line-height: 26rem;
   text-align: center;
   margin: 20px 0 0;
+}
+
+.reviews {
+  grid-column-start: 2;
 }
 
 .socials {
@@ -291,8 +299,13 @@ input, button {
 
   .new-products,
   .our-products,
-  .sale {
+  .sale,
+  .brands  {
     padding: 85px 0 0;
+  }
+
+  .brands-slider {
+    margin: 55px 0 0;
   }
 }
 
@@ -326,6 +339,21 @@ input, button {
   .collection-block.bag {
     grid-row: span 2;
   }
+
+  .footer-nav {
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 40px;
+  }
+
+  .reviews {
+    grid-column-start: auto;
+  }
+
+  .newsletter {
+    grid-row: auto;
+    grid-column: span 2;
+    order: 6;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -351,7 +379,8 @@ input, button {
 
   .new-products,
   .our-products,
-  .sale {
+  .sale,
+  .brands {
     padding: 35px 0 0;
   }
 
@@ -364,6 +393,15 @@ input, button {
     grid-column: span 2;
     grid-row: span 1;
   }
+
+  .newsletter-form button {
+    height: 55px;
+    margin: 10px auto 0;
+  }
+
+  .social-type {
+    margin: 0 15px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -374,5 +412,20 @@ input, button {
 
   .products-collections {
     grid-auto-rows: 160px;
+  }
+
+  .footer-nav {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer-nav {
+    grid-template-columns: 1fr;
+  }
+
+  .newsletter {
+    grid-column: span 1;
   }
 }

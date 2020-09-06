@@ -61,3 +61,31 @@ let saleSlider = new Swiper('.sale .home-catalog-slider', {
   },
   breakpoints: homeCatalogsBreakpoints,
 });
+
+let brandsSlider = new Swiper('.brands-slider', {
+  navigation: {
+    nextEl: '.brands .slider-nav-next',
+    prevEl: '.brands .slider-nav-prev',
+  },
+  breakpoints: {
+    1201: {
+      slidesPerView: 4,
+      spaceBetween: 70,
+    },
+    1025: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    481: {
+      slidesPerView: 2,
+      spaceBetween: 15,
+    },
+    0: {
+      slidesPerView: 1,
+    }
+  }
+})
