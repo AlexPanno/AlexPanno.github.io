@@ -8,6 +8,28 @@ touchMenu.addEventListener('click', () => {
   darkBack.classList.toggle('active');
 });
 
+let newProductsCategories = document.querySelectorAll('.new-products .home-catalog-category');
+let saleCategories = document.querySelectorAll('.sale .home-catalog-category');
+
+saleCategories.forEach((item) => {
+  item.addEventListener('click', () => {
+    saleCategories.forEach((other) => {
+      other.classList.remove('active');
+    });
+    item.classList.add('active');
+  })
+});
+
+newProductsCategories.forEach((item) => {
+  item.addEventListener('click', () => {
+    newProductsCategories.forEach((other) => {
+      other.classList.remove('active');
+    });
+    item.classList.add('active');
+  })
+});
+
+
 let homeCatalogsBreakpoints = {
   1201: {
     slidesPerView: 4,
