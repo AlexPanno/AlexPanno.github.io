@@ -3,10 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/fonts.css">
+
     <title>Estet</title>
   </head>
   <body>
@@ -56,10 +61,22 @@
     <main class="main">
       <section class="banner">
         <div class="container">
-          <img src="img/content/banner-slider-1.png" alt="first">
+          <div class="banner-slider swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/content/banner-slider-1.png" alt="first">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/content/banner-slider-1.png" alt="first">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/content/banner-slider-1.png" alt="first">
+              </div>
+            </div>
+          </div>
           <div class="slider-nav">
-            <img src="img/controls/left-slider-control.svg" alt="arrow">
-            <img src="img/controls/right-slider-control.svg" alt="arrow">
+            <img class="banner-slider-prev" src="img/controls/left-slider-control.svg" alt="arrow">
+            <img class="banner-slider-next" src="img/controls/right-slider-control.svg" alt="arrow">
           </div>
         </div>
       </section>
@@ -79,7 +96,7 @@
           </div>
         </div>
       </section>
-      <!-- <section class="new-products">
+      <section class="new-products">
         <div class="container">
           <h2 class="section-title">Новые поступления</h2>
           <div class="home-catalog">
@@ -88,39 +105,65 @@
               <span class="home-catalog-category active">Женское</span>
             </div>
             <div class="slider-nav">
-              <img src="img/controls/left-slider-control.svg" alt="arrow">
-              <img src="img/controls/right-slider-control.svg" alt="arrow">
+              <img class="slider-nav-prev" src="img/controls/left-slider-control.svg" alt="arrow">
+              <img class="slider-nav-next" src="img/controls/right-slider-control.svg" alt="arrow">
             </div>
-            <div class="home-catalog-slider">
-              <div class="home-product">
-                <img src="img/content/home-product-1.png" alt="product-img">
-                <span class="home-product-name">TOM FORD</span>
-                <span class="home-product-type">Шерстяной жакет</span>
-                <span class="home-product-price">235 500 ₽</span>
-              </div>
-              <div class="home-product">
-                <img src="img/content/home-product-2.png" alt="product-img">
-                <span class="home-product-name">TOM FORD</span>
-                <span class="home-product-type">Шерстяной жакет</span>
-                <span class="home-product-price">235 500 ₽</span>
-              </div>
-              <div class="home-product">
-                <img src="img/content/home-product-3.png" alt="product-img">
-                <span class="home-product-name">TOM FORD</span>
-                <span class="home-product-type">Шерстяной жакет</span>
-                <span class="home-product-price">235 500 ₽</span>
-              </div>
-              <div class="home-product">
-                <img src="img/content/home-product-4.png" alt="product-img">
-                <span class="home-product-name">TOM FORD</span>
-                <span class="home-product-type">Шерстяной жакет</span>
-                <span class="home-product-price">235 500 ₽</span>
+            <div class="home-catalog-slider swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide home-product">
+                  <img src="img/content/home-product-1.png" alt="product-img">
+                  <span class="home-product-name">TOM FORD</span>
+                  <span class="home-product-type">Шерстяной жакет</span>
+                  <span class="home-product-price">235 500 ₽</span>
+                </div>
+                <div class="swiper-slide home-product">
+                  <img src="img/content/home-product-2.png" alt="product-img">
+                  <span class="home-product-name">TOM FORD</span>
+                  <span class="home-product-type">Шерстяной жакет</span>
+                  <span class="home-product-price">235 500 ₽</span>
+                </div>
+                <div class="swiper-slide home-product">
+                  <img src="img/content/home-product-3.png" alt="product-img">
+                  <span class="home-product-name">TOM FORD</span>
+                  <span class="home-product-type">Шерстяной жакет</span>
+                  <span class="home-product-price">235 500 ₽</span>
+                </div>
+                <div class="swiper-slide home-product">
+                  <img src="img/content/home-product-4.png" alt="product-img">
+                  <span class="home-product-name">TOM FORD</span>
+                  <span class="home-product-type">Шерстяной жакет</span>
+                  <span class="home-product-price">235 500 ₽</span>
+                </div>
+                <div class="swiper-slide home-product">
+                  <img src="img/content/home-product-1.png" alt="product-img">
+                  <span class="home-product-name">TOM FORD</span>
+                  <span class="home-product-type">Шерстяной жакет</span>
+                  <span class="home-product-price">235 500 ₽</span>
+                </div>
+                <div class="swiper-slide home-product">
+                  <img src="img/content/home-product-2.png" alt="product-img">
+                  <span class="home-product-name">TOM FORD</span>
+                  <span class="home-product-type">Шерстяной жакет</span>
+                  <span class="home-product-price">235 500 ₽</span>
+                </div>
+                <div class="swiper-slide home-product">
+                  <img src="img/content/home-product-3.png" alt="product-img">
+                  <span class="home-product-name">TOM FORD</span>
+                  <span class="home-product-type">Шерстяной жакет</span>
+                  <span class="home-product-price">235 500 ₽</span>
+                </div>
+                <div class="swiper-slide home-product">
+                  <img src="img/content/home-product-4.png" alt="product-img">
+                  <span class="home-product-name">TOM FORD</span>
+                  <span class="home-product-type">Шерстяной жакет</span>
+                  <span class="home-product-price">235 500 ₽</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </section> -->
-      <!-- <section class="our-products">
+      </section>
+      <section class="our-products">
         <div class="container">
           <div class="products-collections">
             <div class="collection-block male">
@@ -141,8 +184,8 @@
             </div>
           </div>
         </div>
-      </section> -->
-      <!-- <section class="sale">
+      </section>
+      <section class="sale">
         <div class="container">
           <h2 class="section-title">Распродажа</h2>
           <div class="home-catalog">
@@ -151,38 +194,64 @@
               <span class="home-catalog-category active">Женское</span>
             </div>
             <div class="slider-nav">
-              <img src="img/controls/left-slider-control.svg" alt="arrow">
-              <img src="img/controls/right-slider-control.svg" alt="arrow">
+              <img class="slider-nav-next" src="img/controls/left-slider-control.svg" alt="arrow">
+              <img class="slider-nav-prev" src="img/controls/right-slider-control.svg" alt="arrow">
             </div>
-            <div class="home-catalog-slider">
-              <div class="home-product">
-                <img src="img/content/home-product-1.png" alt="product-img">
-                <span class="home-product-name">TOM FORD</span>
-                <span class="home-product-type">Шерстяной жакет</span>
-                <span class="home-product-price">235 500 ₽</span>
-              </div>
-              <div class="home-product">
-                <img src="img/content/home-product-2.png" alt="product-img">
-                <span class="home-product-name">TOM FORD</span>
-                <span class="home-product-type">Шерстяной жакет</span>
-                <span class="home-product-price">235 500 ₽</span>
-              </div>
-              <div class="home-product">
-                <img src="img/content/home-product-3.png" alt="product-img">
-                <span class="home-product-name">TOM FORD</span>
-                <span class="home-product-type">Шерстяной жакет</span>
-                <span class="home-product-price">235 500 ₽</span>
-              </div>
-              <div class="home-product">
-                <img src="img/content/home-product-4.png" alt="product-img">
-                <span class="home-product-name">TOM FORD</span>
-                <span class="home-product-type">Шерстяной жакет</span>
-                <span class="home-product-price">235 500 ₽</span>
+            <div class="home-catalog-slider swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide home-product">
+                  <img src="img/content/home-product-1.png" alt="product-img">
+                  <span class="home-product-name">TOM FORD</span>
+                  <span class="home-product-type">Шерстяной жакет</span>
+                  <span class="home-product-price">235 500 ₽</span>
+                </div>
+                <div class="swiper-slide home-product">
+                  <img src="img/content/home-product-2.png" alt="product-img">
+                  <span class="home-product-name">TOM FORD</span>
+                  <span class="home-product-type">Шерстяной жакет</span>
+                  <span class="home-product-price">235 500 ₽</span>
+                </div>
+                <div class="swiper-slide home-product">
+                  <img src="img/content/home-product-3.png" alt="product-img">
+                  <span class="home-product-name">TOM FORD</span>
+                  <span class="home-product-type">Шерстяной жакет</span>
+                  <span class="home-product-price">235 500 ₽</span>
+                </div>
+                <div class="swiper-slide home-product">
+                  <img src="img/content/home-product-4.png" alt="product-img">
+                  <span class="home-product-name">TOM FORD</span>
+                  <span class="home-product-type">Шерстяной жакет</span>
+                  <span class="home-product-price">235 500 ₽</span>
+                </div>
+                <div class="swiper-slide home-product">
+                  <img src="img/content/home-product-1.png" alt="product-img">
+                  <span class="home-product-name">TOM FORD</span>
+                  <span class="home-product-type">Шерстяной жакет</span>
+                  <span class="home-product-price">235 500 ₽</span>
+                </div>
+                <div class="swiper-slide home-product">
+                  <img src="img/content/home-product-2.png" alt="product-img">
+                  <span class="home-product-name">TOM FORD</span>
+                  <span class="home-product-type">Шерстяной жакет</span>
+                  <span class="home-product-price">235 500 ₽</span>
+                </div>
+                <div class="swiper-slide home-product">
+                  <img src="img/content/home-product-3.png" alt="product-img">
+                  <span class="home-product-name">TOM FORD</span>
+                  <span class="home-product-type">Шерстяной жакет</span>
+                  <span class="home-product-price">235 500 ₽</span>
+                </div>
+                <div class="swiper-slide home-product">
+                  <img src="img/content/home-product-4.png" alt="product-img">
+                  <span class="home-product-name">TOM FORD</span>
+                  <span class="home-product-type">Шерстяной жакет</span>
+                  <span class="home-product-price">235 500 ₽</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- <section class="brands">
         <div class="container">
           <h2 class="section-title">Коллекции любимых брендов</h2>
@@ -284,6 +353,8 @@
       </div>
     </footer> -->
     <div class="dark-background"></div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

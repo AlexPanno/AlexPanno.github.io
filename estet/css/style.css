@@ -42,9 +42,14 @@ input, button {
   margin: 15px 0 0 auto;
 }
 
-.banner img {
+.banner-slider img {
   width: 100%;
   height: auto;
+}
+
+.banner-slider-prev,
+.banner-slider-next {
+  outline: none;
 }
 
 /* Banner */
@@ -83,10 +88,9 @@ input, button {
 
 .products-collections {
   display: grid;
-  grid-template-columns: repeat(2, 310px) 430px;
+  grid-template-columns: repeat(2, 1fr) 430px;
   grid-auto-rows: 200px;
-  grid-row-gap: 45px;
-  justify-content: space-between;
+  grid-gap: 45px;
 }
 
 .collection-block {
@@ -128,8 +132,8 @@ input, button {
 }
 
 .collection-block-name {
-  font-size: 30px;
-  line-height: 38px;
+  font-size: 30rem;
+  line-height: 38rem;
   white-space: pre-line;
   margin-top: auto;
 }
@@ -284,6 +288,12 @@ input, button {
   .collections {
     padding: 100px 0 0;
   }
+
+  .new-products,
+  .our-products,
+  .sale {
+    padding: 85px 0 0;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -298,8 +308,25 @@ input, button {
   .collections {
     padding: 50px 0 0;
   }
-}
 
+  .products-collections {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+  }
+
+  .collection-block {
+    padding: 5px 20px;
+  }
+
+  .collection-block.woman {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .collection-block.bag {
+    grid-row: span 2;
+  }
+}
 
 @media screen and (max-width: 767px) {
   html {
@@ -321,11 +348,31 @@ input, button {
     grid-template-columns: repeat(2, minmax(0, 250px));
     grid-gap: 20px;
   }
+
+  .new-products,
+  .our-products,
+  .sale {
+    padding: 35px 0 0;
+  }
+
+  .collection-block.woman {
+    grid-row: span 2;
+  }
+
+  .collection-block.bag,
+  .collection-block.shoes {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .collections .container {
     grid-template-columns: 1fr;
     justify-content: center;
+  }
+
+  .products-collections {
+    grid-auto-rows: 160px;
   }
 }
