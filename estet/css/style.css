@@ -1,0 +1,276 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Futura PT', sans-serif;
+  color: #282D33;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input, button {
+  font-family: inherit;
+  background-color: inherit;
+  border: none;
+}
+
+.main {
+  padding: 0 0 105px;
+}
+
+.banner .slider-nav {
+  margin: 15px 0 0 auto;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+}
+
+.collections {
+  padding: 150px 0 0;
+}
+
+.collections .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collection {
+  width: 44.5%;
+}
+
+.collection img {
+  width: 100%;
+  height: auto;
+}
+
+.collection-title {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 38px;
+}
+
+.collection-link {
+  display: block;
+  margin: 10px 0 0;
+}
+
+.our-products {
+  padding: 135px 0 0;
+}
+
+.products-collections {
+  display: grid;
+  grid-template-columns: repeat(2, 310px) 430px;
+  grid-auto-rows: 200px;
+  grid-row-gap: 45px;
+  justify-content: space-between;
+}
+
+.collection-block {
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 1px solid #282D33;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.collection-block.male {
+  background-image: url('../img/content/male-collection-block.png');
+  border: none;
+  grid-row: span 2;
+  padding: 10px;
+}
+
+.collection-block.woman {
+  background-image: url('../img/content/woman-collection-block.png');
+  border: none;
+  grid-row: span 2;
+  padding: 10px;
+}
+
+.collection-block.shoes {
+  background-image: url('../img/content/collection-block-shoes.png');
+}
+
+.collection-block.bag {
+  background-image: url('../img/content/collection-block-bag.png');
+}
+
+.collection-block.male .collection-block-name,
+.collection-block.woman .collection-block-name {
+  color: #fff;
+}
+
+.collection-block-name {
+  font-size: 30px;
+  line-height: 38px;
+  white-space: pre-line;
+  margin-top: auto;
+}
+
+.new-products {
+  padding: 135px 0 0;
+}
+
+.sale {
+  padding: 135px 0 0;
+}
+
+.brands {
+  padding: 120px 0 0;
+}
+
+.brands-slider {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0 0;
+}
+
+.brands .slider-nav {
+  margin: 25px 0 0 auto;
+}
+
+/* ===== /Footer/ ===== */
+
+.footer {
+  background-color: #282d33;
+  padding: 50px 0;
+}
+
+.footer-nav {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 260px));
+  grid-row-gap: 20px;
+  justify-content: space-between;
+}
+
+.footer h4 {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 32px;
+  color: #fff;
+}
+
+.footer-nav .nav-ul {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0 0;
+}
+
+.footer-nav .nav-link {
+  font-weight: 300;
+  font-size: 20px;
+  color: #FFFFFF;
+  margin: 0 0 2px;
+}
+
+.newsletter {
+  grid-row: span 2;
+}
+
+.newsletter-form {
+  margin: 10px 0 0;
+}
+
+.newsletter-form input {
+  width: 100%;
+  font-weight: 300;
+  font-size: 20px;
+  color: #fff;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #fff;
+}
+
+.newsletter-form input::placeholder {
+  color: #fff;
+}
+
+.newsletter-form button {
+  width: 100%;
+  height: 75px;
+  border: none;
+  background-color: #C0B19A;
+  font-weight: 450;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  margin: 20px 0 0;
+}
+
+.socials {
+  width: fit-content;
+  margin: 70px auto 0;
+}
+
+.social-types {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 0;
+}
+
+.social-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 25px;
+}
+
+.social-type span {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 13px;
+  color: #fff;
+  margin: 10px 0 0;
+}
+
+.dark-background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 600ms, z-index 600ms;
+}
+
+.dark-background.active {
+  opacity: 0.5;
+  z-index: 99;
+}
+
+@media screen and (max-width: 1360px) {
+  .header .container {
+    width: 1140px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .option-circle {
+    margin: 0 20px 0 0;
+  }
+
+  .header .container {
+    width: 95%;
+  }
+}
