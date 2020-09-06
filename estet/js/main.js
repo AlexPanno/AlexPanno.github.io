@@ -9,20 +9,43 @@ touchMenu.addEventListener('click', () => {
 });
 
 let newProductsCategories = document.querySelectorAll('.new-products .home-catalog-category');
-let saleCategories = document.querySelectorAll('.sale .home-catalog-category');
+let newProductsSliders = document.querySelectorAll('.new-products .slider-wrapper');
 
-saleCategories.forEach((item) => {
+let saleCategories = document.querySelectorAll('.sale .home-catalog-category');
+let saleSliders = document.querySelectorAll('.sale .slider-wrapper');
+
+newProductsCategories.forEach((item) => {
   item.addEventListener('click', () => {
-    saleCategories.forEach((other) => {
+    let current = item.dataset.slider;
+
+    newProductsSliders.forEach((slider) => {
+      slider.classList.remove('active');
+
+      if (slider.classList.contains(current)) {
+        slider.classList.add('active');
+      }
+    });
+
+    newProductsCategories.forEach((other) => {
       other.classList.remove('active');
     });
     item.classList.add('active');
   })
 });
 
-newProductsCategories.forEach((item) => {
+saleCategories.forEach((item) => {
   item.addEventListener('click', () => {
-    newProductsCategories.forEach((other) => {
+    let current = item.dataset.slider;
+
+    saleSliders.forEach((slider) => {
+      slider.classList.remove('active');
+
+      if (slider.classList.contains(current)) {
+        slider.classList.add('active');
+      }
+    });
+
+    saleCategories.forEach((other) => {
       other.classList.remove('active');
     });
     item.classList.add('active');
@@ -68,18 +91,34 @@ let bannerSlider = new Swiper('.banner-slider', {
   }
 });
 
-let newProductsSlider = new Swiper('.new-products .home-catalog-slider', {
+let maleCollection = new Swiper('.new-products .slider-wrapper.male .home-catalog-slider', {
   navigation: {
-    nextEl: '.new-products .slider-nav-next',
-    prevEl: '.new-products .slider-nav-prev',
+    nextEl: '.slider-wrapper.male .slider-nav-next',
+    prevEl: '.slider-wrapper.male .slider-nav-prev',
   },
   breakpoints: homeCatalogsBreakpoints,
 });
 
-let saleSlider = new Swiper('.sale .home-catalog-slider', {
+let womanCollection = new Swiper('.new-products .slider-wrapper.woman .home-catalog-slider', {
   navigation: {
-    nextEl: '.sale .slider-nav-next',
-    prevEl: '.sale .slider-nav-prev',
+    nextEl: '.new-products .slider-wrapper.woman .slider-nav-next',
+    prevEl: '.new-products .slider-wrapper.woman .slider-nav-prev',
+  },
+  breakpoints: homeCatalogsBreakpoints,
+});
+
+let saleMale = new Swiper('.sale .slider-wrapper.male .home-catalog-slider', {
+  navigation: {
+    nextEl: '.sale .slider-wrapper.male .slider-nav-next',
+    prevEl: '.sale .slider-wrapper.male .slider-nav-prev',
+  },
+  breakpoints: homeCatalogsBreakpoints,
+});
+
+let saleWoman = new Swiper('.sale .slider-wrapper.woman .home-catalog-slider', {
+  navigation: {
+    nextEl: '.sale .slider-wrapper.woman  .slider-nav-next',
+    prevEl: '.sale .slider-wrapper.woman  .slider-nav-prev',
   },
   breakpoints: homeCatalogsBreakpoints,
 });

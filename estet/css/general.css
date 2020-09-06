@@ -42,6 +42,23 @@
   margin: 20px 0 0;
 }
 
+.home-catalog-sliders {
+  position: relative;
+}
+
+.slider-wrapper {
+  width: 100%;
+  top: 0;
+  opacity: 0;
+  transition: opacity 400ms;
+}
+
+.slider-wrapper.active {
+  position: absolute;
+  z-index: 9;
+  opacity: 1;
+}
+
 .home-catalog-categories {
   display: flex;
   align-items: center;
