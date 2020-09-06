@@ -8,6 +8,11 @@ touchMenu.addEventListener('click', () => {
   darkBack.classList.toggle('active');
 });
 
+window.addEventListener('scroll', () => {
+  headerNav.classList.remove('active');
+  darkBack.classList.remove('active');
+});
+
 let newProductsCategories = document.querySelectorAll('.new-products .home-catalog-category');
 let newProductsSliders = document.querySelectorAll('.new-products .slider-wrapper');
 

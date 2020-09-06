@@ -20,6 +20,7 @@
   width: 40px;
   height: 40px;
   border: 1px solid #282D33;
+  z-index: 2;
   border-radius: 50%;
 }
 
@@ -132,7 +133,8 @@
     width: 200px;
     padding: 30px;
     height: 100%;
-    top: 86px;
+    padding-top: 85px;
+    top: 0;
     left: -200px;
     margin: 0;
     transition: left 600ms;
@@ -171,6 +173,13 @@
   .header-options,
   .budget {
     display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    position: fixed;
+    width: 100%;
   }
 }
 
