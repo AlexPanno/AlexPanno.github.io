@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+html {
+  font-size: 1px;
+}
+
 body {
   font-family: 'Futura PT', sans-serif;
   color: #282D33;
@@ -32,6 +36,8 @@ input, button {
   padding: 0 0 105px;
 }
 
+/* Banner */
+
 .banner .slider-nav {
   margin: 15px 0 0 auto;
 }
@@ -41,17 +47,16 @@ input, button {
   height: auto;
 }
 
+/* Banner */
+
 .collections {
   padding: 150px 0 0;
 }
 
 .collections .container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 44.5%);
   justify-content: space-between;
-}
-
-.collection {
-  width: 44.5%;
 }
 
 .collection img {
@@ -69,6 +74,8 @@ input, button {
   display: block;
   margin: 10px 0 0;
 }
+
+/* our-products */
 
 .our-products {
   padding: 135px 0 0;
@@ -272,5 +279,53 @@ input, button {
 
   .header .container {
     width: 95%;
+  }
+
+  .collections {
+    padding: 100px 0 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .banner .container {
+    width: 100%;
+  }
+
+  .banner .slider-nav {
+    margin: 20px auto 0;
+  }
+
+  .collections {
+    padding: 50px 0 0;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 0.13vw
+  }
+
+  .collection-title {
+    font-size: 30rem;
+    line-height: 38rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 0.78px;
+  }
+
+  .collections .container {
+    grid-template-columns: repeat(2, minmax(0, 250px));
+    grid-gap: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .collections .container {
+    grid-template-columns: 1fr;
+    justify-content: center;
   }
 }

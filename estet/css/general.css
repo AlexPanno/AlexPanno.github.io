@@ -111,3 +111,15 @@
     width: 95%;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 85%;
+  }
+}
