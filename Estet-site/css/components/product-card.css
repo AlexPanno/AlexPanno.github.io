@@ -1,0 +1,22 @@
+.product-card {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  line-height: 19px;
+  font-weight: 450;
+  color: #000;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.product-card-name {
+  text-transform: uppercase;
+  margin: 5px 0 0;
+}
+
+.product-card-category {
+  font-weight: 300;
+}

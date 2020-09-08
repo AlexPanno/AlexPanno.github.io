@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- Swiper JS styles  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- General styles -->
+    <link rel="stylesheet" href="css/general/fonts.css">
+    <link rel="stylesheet" href="css/general/tags.css">
+    <link rel="stylesheet" href="css/general/general.css">
+    <!-- Components styles -->
+    <link rel="stylesheet" href="css/components/header.css">
+    <link rel="stylesheet" href="css/components/footer.css">
+    <link rel="stylesheet" href="css/components/custom-checkbox.css">
+    <link rel="stylesheet" href="css/components/size-mark.css">
+    <link rel="stylesheet" href="css/components/product-card.css">
+    <!-- Page styles -->
+    <link rel="stylesheet" href="css/pages/catalog.css">
+    <title>Catalog</title>
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="container">
+        <div class="header-inner">
+          <div class="touch-menu">
+            <div class="touch-menu-line"></div>
+            <div class="touch-menu-line"></div>
+            <div class="touch-menu-line"></div>
+          </div>
+          <a href="#" class="logo">
+            <img src="img/content/Logo.svg" alt="logo">
+          </a>
+          <nav class="header-nav">
+            <ul class="nav-ul">
+              <li class="nav-link">
+                <a href="#">Новинки</a>
+              </li>
+              <li class="nav-link">
+                <a href="#">Распродажа</a>
+              </li>
+              <li class="nav-link">
+                <a href="#">Мужское</a>
+              </li>
+              <li class="nav-link">
+                <a href="#">Женское</a>
+              </li>
+              <li class="nav-link">
+                <a href="#">Бренды</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-options">
+            <div class="option-circle">
+              <img src="img/controls/search.svg" alt="search">
+            </div>
+            <div class="option-circle">
+              <img src="img/icons/user.svg" alt="user">
+            </div>
+            <div class="option-circle cart">
+              <img src="img/icons/bag.svg" alt="bag">
+            </div>
+          </div>
+          <span class="budget">34 000 ₽</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="catalog">
+      <div class="container">
+        <div class="page-info">
+          <h2 class="page-title">Женская коллекция</h2>
+          <span class="page-address">Каталог/Брюки/<span class="current-page-address">Лето</span></span>
+        </div>
+        <div class="products-catalog">
+          <div class="catalog-settings">
+            <div class="catalog-settings-block">
+              <h4 class="catalog-settings-block-title">Каталог</h4>
+              <div class="catalog-settings-block-content">
+                <ul class="catalog-categories">
+
+                  <li class="catalog-category">
+                    <div class="catalog-category-view">
+                      <span class="catalog-category-name">Брюки</span>
+                      <img src="img/controls/catalog-categoty-arrow.svg" alt="arrrow">
+                    </div>
+                    <!-- <ul class="catalog-category-items">
+                      <li class="catalog-category-item">Костюмы</li>
+                      <li class="catalog-category-item">Брюки</li>
+                      <li class="catalog-category-item">Обувь</li>
+                      <li class="catalog-category-item">Шорты</li>
+                    </ul> -->
+                  </li>
+
+                  <li class="catalog-category">
+                    <div class="catalog-category-view">
+                      <span class="catalog-category-name">Верхняя одежда</span>
+                      <img src="img/controls/catalog-categoty-arrow.svg" alt="arrrow">
+                    </div>
+                  </li>
+
+                  <li class="catalog-category">
+                    <div class="catalog-category-view">
+                      <span class="catalog-category-name">Джинсы</span>
+                      <img src="img/controls/catalog-categoty-arrow.svg" alt="arrrow">
+                    </div>
+                  </li>
+
+                  <li class="catalog-category">
+                    <div class="catalog-category-view">
+                      <span class="catalog-category-name">Жакеты</span>
+                      <img src="img/controls/catalog-categoty-arrow.svg" alt="arrrow">
+                    </div>
+                  </li>
+
+                  <li class="catalog-category">
+                    <div class="catalog-category-view">
+                      <span class="catalog-category-name">Комбенизоны</span>
+                      <img src="img/controls/catalog-categoty-arrow.svg" alt="arrrow">
+                    </div>
+                  </li>
+
+                  <li class="catalog-category">
+                    <div class="catalog-category-view">
+                      <span class="catalog-category-name">Костюмы</span>
+                      <img src="img/controls/catalog-categoty-arrow.svg" alt="arrrow">
+                    </div>
+                  </li>
+
+                  <li class="catalog-category">
+                    <div class="catalog-category-view">
+                      <span class="catalog-category-name">Платья</span>
+                      <img src="img/controls/catalog-categoty-arrow.svg" alt="arrrow">
+                    </div>
+                  </li>
+
+                  <li class="catalog-category">
+                    <div class="catalog-category-view">
+                      <span class="catalog-category-name">Пляж</span>
+                      <img src="img/controls/catalog-categoty-arrow.svg" alt="arrrow">
+                    </div>
+                  </li>
+
+                  <li class="catalog-category">
+                    <div class="catalog-category-view">
+                      <span class="catalog-category-name">Спорт</span>
+                      <img src="img/controls/catalog-categoty-arrow.svg" alt="arrrow">
+                    </div>
+                  </li>
+
+                  <li class="catalog-category">
+                    <div class="catalog-category-view">
+                      <span class="catalog-category-name">Топы</span>
+                      <img src="img/controls/catalog-categoty-arrow.svg" alt="arrrow">
+                    </div>
+                  </li>
+
+                  <li class="catalog-category">
+                    <div class="catalog-category-view">
+                      <span class="catalog-category-name">Шорты</span>
+                      <img src="img/controls/catalog-categoty-arrow.svg" alt="arrrow">
+                    </div>
+                  </li>
+
+                  <li class="catalog-category">
+                    <div class="catalog-category-view">
+                      <span class="catalog-category-name">Трикотаж</span>
+                      <img src="img/controls/catalog-categoty-arrow.svg" alt="arrrow">
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+            <div class="catalog-settings-block filter">
+              <h4 class="catalog-settings-block-title">Фильтр</h4>
+              <div class="catalog-settings-block-content">
+                <div class="filter-section">
+                  <h6 class="filter-section-title">Цвет</h6>
+                  <div class="filter-colors">
+                    <div style="background-color: #FAA16F" class="color"></div>
+                    <div style="background-color: #53B843" class="color"></div>
+                    <div style="background-color: #FF8BC3" class="color"></div>
+                    <div style="background-color: #171615" class="color"></div>
+                    <div style="background-color: #C4C4C4" class="color"></div>
+                  </div>
+                </div>
+                <div class="filter-section">
+                  <h6 class="filter-section-title">Бренд</h6>
+                  <form class="filter-brands" action="catalog.html" method="post">
+                    <div class="input-wrapper">
+                      <div class="custom-checkbox">
+                        <input type="checkbox" name="" value="" id="tomFordBrand">
+                        <div class="custom-checkbox-dot"></div>
+                      </div>
+                      <label for="tomFordBrand">Tom Ford</label>
+                    </div>
+                    <div class="input-wrapper">
+                      <div class="custom-checkbox">
+                        <input type="checkbox" name="" value="" id="dolceGabannaBrand">
+                        <div class="custom-checkbox-dot"></div>
+                      </div>
+                      <label for="dolceGabannaBrand">Dolce & Gabbana</label>
+                    </div>
+                    <div class="input-wrapper">
+                      <div class="custom-checkbox">
+                        <input type="checkbox" name="" value="" id="miuMiuBrand">
+                        <div class="custom-checkbox-dot"></div>
+                      </div>
+                      <label for="miuMiuBrand">Miu Miu</label>
+                    </div>
+                  </form>
+                </div>
+                <div class="filter-section">
+                  <h6 class="filter-section-title">Размер</h6>
+                  <div class="filter-sizes">
+                    <div class="size-mark">
+                      <span>s\42</span>
+                    </div>
+                    <div class="size-mark">
+                      <span>m\44</span>
+                    </div>
+                    <div class="size-mark">
+                      <span>l\46</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter-section">
+                  <h6 class="filter-section-title">Сезон</h6>
+                  <form class="season-form" action="index.html" method="post">
+                    <div class="input-wrapper">
+                      <div class="custom-checkbox">
+                        <input type="checkbox" name="" value="" id="seasonWinter">
+                        <div class="custom-checkbox-dot"></div>
+                      </div>
+                      <label for="seasonWinter">Зима</label>
+                    </div>
+                    <div class="input-wrapper">
+                      <div class="custom-checkbox">
+                        <input type="checkbox" name="" value="" id="seasonSummer">
+                        <div class="custom-checkbox-dot"></div>
+                      </div>
+                      <label for="seasonSummer">Лето</label>
+                    </div>
+                    <div class="input-wrapper">
+                      <div class="custom-checkbox">
+                        <input type="checkbox" name="" value="" id="seasonAutumnSpring">
+                        <div class="custom-checkbox-dot"></div>
+                      </div>
+                      <label for="seasonAutumnSpring">Осень\весна</label>
+                    </div>
+                  </form>
+                </div>
+                <div class="filter-section filter-price-range">
+                  <div class="price-range">
+                    <div class="price-range-track"></div>
+                    <div class="price-range-dot min-price-dot"></div>
+                    <div class="price-range-dot max-price-dot"></div>
+                  </div>
+                  <span class="price-range-text">Цена: 2 459 - 145 977 ₽</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-view">
+            <div class="catalog-view-top">
+              <div class="catalog-view-types">
+                <svg data-active="active" class="catalog-view-type" width="26" height="20" viewBox="0 0 26 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <rect width="26" height="20" fill="url(#pattern0)"/>
+                  <defs>
+                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0" transform="translate(-0.00295858) scale(0.0295858 0.0384615)"/>
+                    </pattern>
+                    <image id="image0" width="34" height="26" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAaCAYAAADSbo4CAAAACXBIWXMAAC4jAAAuIwF4pT92AAABKUlEQVR4nGNhZGRkUtcx7GJgYAxiYGBgZSANnL1+6UwAiKGpZ3ICSEmTpPs/w4//jAzzb1w608aiqm0IdABjMYkOgJn0GIkjAcQyJGlnBKNWNT3jAyyMjAwK5DmCeoDx/38FloF2BAyMOgQdjDoEHYw6BB0MIof8//+GgZHxCnnaGe8hcW4B8WeyTPnH8JHlxuVzC4DsBeQ5BAGAdY4bJfoHT9Ro6BrHMzIwFpCj+T/D/0s3Lp+NB7E19Iy3Mf5nlCTLFf//V7EAqz9RINOAHP3AmvM7gs2oBSTkyTHnH8N/wcETNQPtABgYdQg6GHUIOhh1CDpgYfz3/yEDE+OAOgJo/UOWm9curFPXNpoILBXJ6GAxvkOw/78G8tlJ0///B7CemH/98rmjAEfERR7VfQBUAAAAAElFTkSuQmCC"/>
+                  </defs>
+                </svg>
+                <svg data-active="" class="catalog-view-type" width="27" height="20" viewBox="0 0 27 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <rect width="26.4" height="20" fill="url(#pattern1)"/>
+                  <defs>
+                    <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image1" transform="translate(-0.00990677) scale(0.0291375 0.0384615)"/>
+                    </pattern>
+                    <image id="image1" width="35" height="26" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAaCAYAAAA9rOU8AAAACXBIWXMAAC4jAAAuIwF4pT92AAABTElEQVR4nO2Wv0rDUBTGv1NvcxGztODm4CCF4h+U1rfwHZwcfQBfQAQXwaWF4ioIPoVuVhC6dBGELi7SQVowtD09SR26hJyUq8mQ33JJ+M7lF7h8N6a2f3hSwtoVGBYJMPg+GA0v7Ua1l5RNBWEqe3eMiJzL4668UMxgMwiCkvWx41Qm2psujHxuWSPyD5RN1gbLFDJx5EuGgXdiVDRhJhp4njeTQ//m3IR4bPq97tkKo0fOZQRTP2jeyXqsSjM//IyG19avvrgWYcY47Jlt6Zk91QThOSo9KPMpIMJ3vg5w1gLLFDJx5EtG/ iMGcn33NWEGfUalB6jyKQlL7/V0hcG6cxVEpddoydpQpRmPUno31q88/YFLWHpUkzJrquLE3UXpkS6fjqL0Yilk4jByeCdZS/wyMTPGrVzfWwReT4wzvhalxx9uPWgqm7bnVUZZI8m9yVAAAAAASUVORK5CYII="/>
+                  </defs>
+                </svg>
+              </div>
+              <div class="catalog-view-select">
+                <div class="select-button">
+                  <span>По умолчанию</span>
+                  <img src="img/controls/catalog-categoty-arrow.svg" alt="arrow">
+                </div>
+                <div class="select-button">
+                  <span>15</span>
+                  <img src="img/controls/catalog-categoty-arrow.svg" alt="arrow">
+                </div>
+              </div>
+            </div>
+            <div class="catalog-view-products">
+
+              <div class="product-card">
+                <img src="img/content/product-1.png" alt="product">
+                <span class="product-card-name">Tom Ford</span>
+                <span class="product-card-category">Шерстяной жакет</span>
+                <span class="product-card-price">235 500 ₽</span>
+              </div>
+
+              <div class="product-card">
+                <img src="img/content/product-2.png" alt="product">
+                <span class="product-card-name">Tom Ford</span>
+                <span class="product-card-category">Шерстяной жакет</span>
+                <span class="product-card-price">235 500 ₽</span>
+              </div>
+
+              <div class="product-card">
+                <img src="img/content/product-3.png" alt="product">
+                <span class="product-card-name">Tom Ford</span>
+                <span class="product-card-category">Шерстяной жакет</span>
+                <span class="product-card-price">235 500 ₽</span>
+              </div>
+
+              <div class="product-card">
+                <img src="img/content/product-4.png" alt="product">
+                <span class="product-card-name">Tom Ford</span>
+                <span class="product-card-category">Шерстяной жакет</span>
+                <span class="product-card-price">235 500 ₽</span>
+              </div>
+
+              <div class="product-card">
+                <img src="img/content/product-5.png" alt="product">
+                <span class="product-card-name">Tom Ford</span>
+                <span class="product-card-category">Шерстяной жакет</span>
+                <span class="product-card-price">235 500 ₽</span>
+              </div>
+
+              <div class="product-card">
+                <img src="img/content/product-6.png" alt="product">
+                <span class="product-card-name">Tom Ford</span>
+                <span class="product-card-category">Шерстяной жакет</span>
+                <span class="product-card-price">235 500 ₽</span>
+              </div>
+
+              <div class="product-card">
+                <img src="img/content/product-7.png" alt="product">
+                <span class="product-card-name">Tom Ford</span>
+                <span class="product-card-category">Шерстяной жакет</span>
+                <span class="product-card-price">235 500 ₽</span>
+              </div>
+
+              <div class="product-card">
+                <img src="img/content/product-8.png" alt="product">
+                <span class="product-card-name">Tom Ford</span>
+                <span class="product-card-category">Шерстяной жакет</span>
+                <span class="product-card-price">235 500 ₽</span>
+              </div>
+
+              <div class="product-card">
+                <img src="img/content/product-1.png" alt="product">
+                <span class="product-card-name">Tom Ford</span>
+                <span class="product-card-category">Шерстяной жакет</span>
+                <span class="product-card-price">235 500 ₽</span>
+              </div>
+
+              <div class="product-card">
+                <img src="img/content/product-2.png" alt="product">
+                <span class="product-card-name">Tom Ford</span>
+                <span class="product-card-category">Шерстяной жакет</span>
+                <span class="product-card-price">235 500 ₽</span>
+              </div>
+
+              <div class="product-card">
+                <img src="img/content/product-3.png" alt="product">
+                <span class="product-card-name">Tom Ford</span>
+                <span class="product-card-category">Шерстяной жакет</span>
+                <span class="product-card-price">235 500 ₽</span>
+              </div>
+
+              <div class="product-card">
+                <img src="img/content/product-4.png" alt="product">
+                <span class="product-card-name">Tom Ford</span>
+                <span class="product-card-category">Шерстяной жакет</span>
+                <span class="product-card-price">235 500 ₽</span>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <nav class="footer-nav">
+          <div class="nav-section">
+            <h4 class="nav-section-title">Покупателям</h4>
+            <ul class="nav-ul">
+              <li class="nav-link">
+                <a href="#">Вопросы и ответы</a>
+              </li>
+              <li class="nav-link">
+                <a href="#">Возврат</a>
+              </li>
+              <li class="nav-link">
+                <a href="#">Доставка</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-section">
+            <h4 class="nav-section-title">О компании</h4>
+            <ul class="nav-ul">
+              <li class="nav-link">
+                <a href="#">Магазины</a>
+              </li>
+              <li class="nav-link">
+                <a href="#">О нас</a>
+              </li>
+              <li class="nav-link">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-section">
+            <h4 class="nav-section-title">Связаться с нами</h4>
+            <ul class="nav-ul">
+              <li class="nav-link">
+                <a href="#">WhatsApp</a>
+              </li>
+              <li class="nav-link">
+                <a href="#">Эл. почта</a>
+              </li>
+              <li class="nav-link">
+                <a href="#">Telegram</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-section newsletter">
+            <h4 class="nav-section-title">Узнавайте первыми о новинках и скидках</h4>
+            <form class="newsletter-form" action="index.html" method="post">
+              <input type="text" name="" value="" placeholder="Адрес эл. почты">
+              <button type="button" name="button">Подписаться</button>
+            </form>
+          </div>
+          <div class="nav-section reviews">
+            <h4 class="nav-section-title">Отзывы</h4>
+            <ul class="nav-ul">
+              <li class="nav-link">
+                <a href="#">Отзывы</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-section">
+            <h4 class="nav-section-title">Личный кабинет</h4>
+            <ul class="nav-ul">
+              <li class="nav-link">
+                <a href="#">Войти</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="socials">
+          <h4>Наши инстаграмы</h4>
+          <div class="social-types">
+            <div class="social-type">
+              <img src="img/icons/instagram-icon.svg" alt="instagram">
+              <span>Мужчины</span>
+            </div>
+            <div class="social-type">
+              <img src="img/icons/instagram-icon.svg" alt="instagram">
+              <span>Женщины</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

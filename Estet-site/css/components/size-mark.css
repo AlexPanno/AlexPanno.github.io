@@ -1,0 +1,21 @@
+.size-mark {
+  width: 45px;
+  height: 15px;
+  border: 1px solid #C0B19A;
+  font-size: 11px;
+  line-height: 15px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 400ms, color 400ms;
+}
+
+.size-mark:last-of-type {
+  margin: 0;
+}
+
+.size-mark:hover {
+  background-color: #282D33;
+  color: #C0B19A;
+}

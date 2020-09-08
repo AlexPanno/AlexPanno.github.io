@@ -1,0 +1,119 @@
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.page-info {
+  position: relative;
+  width: 100%;
+}
+
+.return-button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  line-height: 23px;
+  color: #C0B19A;
+  cursor: pointer;
+  margin: 16px 0 0;
+}
+
+.return-button img {
+  margin: 0 20px 0 0;
+}
+
+.page-info-text {
+  width: 37%;
+  min-width: 365px;
+  margin: 0 auto;
+}
+
+.page-title {
+  font-size: 42rem;
+  line-height: 54rem;
+  font-weight: 700;
+}
+
+.page-address {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 300;
+}
+
+.current-page-address {
+  font-weight: 600;
+}
+
+.input-wrapper,
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.normal-text {
+  font-weight: 450;
+}
+
+.default-button {
+  width: 190px;
+  height: 45px;
+  border: 1px solid #C4C4C4;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 15px;
+  line-height: 19px;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 200ms, color 200ms;
+}
+
+.default-button:hover {
+  background-color: #C0B19A;
+  color: #fff;
+}
+
+.default-button:last-of-type {
+  margin: 0;
+}
+
+.form-field {
+  margin: 0 0 10px;
+}
+
+.form-field:last-of-type {
+  margin: 0;
+}
+
+.default-input,
+.default-textarea {
+  width: 100%;
+  border: 1px solid #C0B19A;
+}
+
+.default-input {
+  height: 45px;
+}
+
+.default-textarea {
+  height: 140px;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .return-button {
+    position: relative;
+    margin: 0 0 20px;
+  }
+
+  .page-info-text {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+  }
+}
