@@ -56,6 +56,10 @@ h6 {
   html {
     font-size: 0.13vw
   }
+
+  main {
+    padding-bottom: 50px;
+  }
 }
 
 @media screen and (max-width: 600px) {
