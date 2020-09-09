@@ -150,11 +150,11 @@
 
         <div class="product-toggle-info">
           <div class="toggle-info-titles">
-            <h3 data-active="active" class="toggle-info-title">Описание</h3>
-            <h3 data-active="" class="toggle-info-title">Отзывы</h3>
+            <h3 data-active="active" data-bind="description" class="toggle-info-title">Описание</h3>
+            <h3 data-active="" data-bind="reviews" class="toggle-info-title">Отзывы</h3>
           </div>
           <div class="toggle-info-sections">
-            <div class="product-description">
+            <div data-active="active" data-section="description" class="product-description toggle-info-section">
               <p>Разноцветная укороченная блуза из весенне-летней коллекции 2020 года одинаково хорошо подойдет и для прогулок у моря, и для  города. Доменико Дольче и Стефано
                 Габбана выбрали для модели,стилизованной под рубашку с отложным воротником, легкий шелковый  креп с красочным принтом в виде африканских барабанов джембе.
                 Расслабленный вид изделия поддержали лентами, завязывающимися узлом на талии.
@@ -166,7 +166,7 @@
                 Артикул производителя: F5N11T/IS1D2
               </p>
             </div>
-            <!-- <form class="product-review-form" method="post">
+            <form data-active="" data-section="reviews" class="product-review-form toggle-info-section" method="post">
               <div class="form-field">
                 <label for="">Ваше имя</label>
                 <input type="text" name="" value="" class="default-input">
@@ -186,7 +186,7 @@
                 <textarea name="name" rows="8" cols="80" class="default-textarea"></textarea>
               </div>
               <button type="submit" name="submit">Отправить</button>
-            </form> -->
+            </form>
           </div>
         </div>
 
@@ -277,6 +277,8 @@
         </div>
       </div>
     </footer>
-
+    <div class="dark-background"></div>
+    <script src="js/main.js"></script>
+    <script src="js/product.js"></script>
   </body>
 </html>

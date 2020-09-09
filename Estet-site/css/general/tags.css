@@ -30,6 +30,7 @@ a {
 
 input, button, textarea {
   outline: none;
+  color: inherit;
 }
 
 input, button {

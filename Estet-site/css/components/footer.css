@@ -24,8 +24,7 @@
 }
 
 .footer-nav .nav-link {
-  font-size: 20rem;
-  font-weight: 300;
+  font-size: 20px;
   color: #FFFFFF;
   margin: 0 0 2px;
 }
@@ -115,10 +114,29 @@
   .footer-nav {
     grid-column-gap: 10px;
   }
+
+  .newsletter-form button {
+    height: 55px;
+    margin: 10px auto 0;
+  }
+
+  .social-type {
+    margin: 0 15px;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .footer-nav {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer-nav {
+    grid-template-columns: 1fr;
+  }
+
+  .newsletter {
+    grid-column: span 1;
   }
 }

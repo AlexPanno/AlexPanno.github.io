@@ -18,11 +18,18 @@
 
 .custom-checkbox-dot {
   display: none;
-  width: 9px;
-  height: 9px;
+  width: 70%;
+  height: 70%;
   background-color: #282D33;
 }
 
 .custom-checkbox input:checked + .custom-checkbox-dot {
   display: block;
+}
+
+@media screen and (max-width: 480px) {
+  .custom-checkbox {
+    width: 25px;
+    height: 25px;
+  }
 }

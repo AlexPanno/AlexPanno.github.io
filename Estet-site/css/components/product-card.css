@@ -20,3 +20,21 @@
 .product-card-category {
   font-weight: 300;
 }
+
+.product-card-price {
+  position: relative;
+  width: fit-content;
+}
+
+.product-card-price.sale::after {
+  content: '235 500 ₽';
+  width: 46px;
+  position: absolute;
+  display: block;
+  font-size: 10rem;
+  line-height: 13rem;
+  text-decoration-line: line-through;
+  color: #C0B19A;
+  left: 110%;
+  top: 0;
+}
