@@ -1,11 +1,12 @@
-let settingsBlocks = document.querySelectorAll('.settings-block');
+let settingsBlocks = document.querySelectorAll('.settings-block-title');
 let catalogCategories = document.querySelectorAll('.catalog-category');
 
 settingsBlocks.forEach((item) => {
   item.addEventListener('click', () => {
-    let value = item.dataset.active;
+    let parent = item.parentElement;
+    let value = parent.dataset.active;
 
-    item.dataset.active = (value == '') ? 'active' : '';
+    parent.dataset.active = (value == '') ? 'active' : '';
   })
 });
 
